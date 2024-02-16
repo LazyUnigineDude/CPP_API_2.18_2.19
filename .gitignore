@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.thumbnails
+/bin
+/include
+/lib
+/utils/natvis
+/data/.cache_textures
+/data/.editor2
+/data/.runtimes
+/data/.thumbnails
+/data/ComponentSystem
+/data/configs
+/data/core.ung
+/data/editor.cache
+/data/editor2.ung
+/data/material_ball.node
+/data/material_ball.node.meta
+/data/template_assets
+/source/.vs/CPP_API
+/source/x64/Debug

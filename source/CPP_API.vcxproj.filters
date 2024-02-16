@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Natvis Include="../utils/natvis/unigine_stl.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AppEditorLogic.cpp">
+      <Filter>_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="AppSystemLogic.cpp">
+      <Filter>_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="AppWorldLogic.cpp">
+      <Filter>_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentBasics\ComponentCheck.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppEditorLogic.h">
+      <Filter>_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="AppSystemLogic.h">
+      <Filter>_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="AppWorldLogic.h">
+      <Filter>_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentBasics\ComponentCheck.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Main">
+      <UniqueIdentifier>{e6497b6c-7d2e-4c24-8629-b514444b2ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{48039145-d229-4df7-b1ab-f994b3c1c589}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
