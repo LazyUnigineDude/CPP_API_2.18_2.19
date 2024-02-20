@@ -1,4 +1,6 @@
 #include "AppWorldLogic.h"
+#include "UnigineConsole.h"
+#include "UnigineVisualizer.h"
 
 // World logic, it takes effect only when the world is loaded.
 // These methods are called right after corresponding world script's (UnigineScript) methods.
@@ -12,6 +14,8 @@ AppWorldLogic::~AppWorldLogic()
 int AppWorldLogic::init()
 {
 	// Write here code to be called on world initialization: initialize resources for your world scene during the world start.
+	Unigine::Console::setOnscreen(true);
+	Unigine::Visualizer::setMode(Unigine::Visualizer::MODE_ENABLED_DEPTH_TEST_ENABLED);
 	return 1;
 }
 

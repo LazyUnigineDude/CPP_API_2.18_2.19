@@ -76,12 +76,14 @@
     <ClCompile Include="AppWorldLogic.cpp" />
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TruckController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h" />
     <ClInclude Include="AppSystemLogic.h" />
     <ClInclude Include="AppWorldLogic.h" />
     <ClInclude Include="ComponentBasics\ComponentCheck.h" />
+    <ClInclude Include="TruckController.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />

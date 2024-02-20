@@ -22,3 +22,6 @@
 /source/.vs/CPP_API
 /source/x64/Debug
 /source/CPP_API/x64
+/data/Truck
+/source/TruckController.h
+/source/TruckController.cpp

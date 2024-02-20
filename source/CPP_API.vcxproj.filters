@@ -4,7 +4,6 @@
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="AppEditorLogic.cpp">
       <Filter>_Main</Filter>
     </ClCompile>
@@ -16,6 +15,10 @@
     </ClCompile>
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp">
       <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="TruckController.cpp" />
+    <ClCompile Include="main.cpp">
+      <Filter>_Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +34,7 @@
     <ClInclude Include="ComponentBasics\ComponentCheck.h">
       <Filter>Component</Filter>
     </ClInclude>
+    <ClInclude Include="TruckController.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">

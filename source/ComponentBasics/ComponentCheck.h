@@ -21,6 +21,7 @@ public:
 		COMPONENT_SWAP(Swap);
 		COMPONENT_SHUTDOWN(Shutdown);
 
+protected:
 		//		   Type, Name,  Val, Name in prop, Tooltip,				  Group
 		PROP_PARAM(Int,  IDNum,  3,  "ID"        , "It is the Barcode ID", "Ingredient");
 		PROP_PARAM(Float, FreshAmount, 30.0f, "Freshness", "It is the Freshness Value", "Ingredient");
@@ -43,8 +44,13 @@ public:
 		PROP_STRUCT(RandomStruct, BaseID, "Admin", "Setup Main Administrator For Account", "Struct");
 		PROP_ARRAY_STRUCT(RandomStruct, OtherID, "Users", "Setup Other Users in Account", "Struct");
 
-protected:
-	void Init();
-	void Update();
+	void Init(), UpdateAsync(), UpdateSync(), Update(), UpdatePost(), UpdatePhysics(), Swap(), Shutdown();
 };
 
+struct DerivedComponentCheck : public ComponentCheck {
+	COMPONENT_DEFINE(DerivedComponentCheck, ComponentCheck);
+	COMPONENT_INIT(Init);
+
+protected:
+	void Init();
+};
