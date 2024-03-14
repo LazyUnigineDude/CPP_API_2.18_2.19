@@ -801,7 +801,7 @@
 			<controlled>1</controlled>
 			<transform>-0.997564435005 -0.0697527527809 3.09199094772e-07 0.0 0.0247731339186 -0.354287296534 0.934808433056 0.0 -0.0652053505182 0.93253159523 0.355152308941 0.0 -0.0994136831901 5.62683294729 2.98393392388 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="1220731747" enabled="0" name="material_ball">
+		<node type="ObjectMeshStatic" id="1220731747" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
@@ -812,12 +812,6 @@
 				<property parent="d5be6c54f8ee37cae4ea2bd549504527c6e0abff" guid="f13943ce3d249ad9311d2fbaa331e837b90bc2f0"/>
 			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-		</node>
-		<node type="NodeDummy" id="1588364620" name="NodeDummy">
-			<properties>
-				<property parent="4c1b04333e27657cf305293ac4ca3e352c526438" guid="f6a42e6499ef188fbfc1f8f01dda5a9dd97d05f6"/>
-			</properties>
-			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>
 	<console>

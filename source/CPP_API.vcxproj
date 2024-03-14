@@ -76,6 +76,7 @@
     <ClCompile Include="AppWorldLogic.cpp" />
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TimeController.cpp" />
     <ClCompile Include="TruckController.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,7 @@
     <ClInclude Include="AppSystemLogic.h" />
     <ClInclude Include="AppWorldLogic.h" />
     <ClInclude Include="ComponentBasics\ComponentCheck.h" />
+    <ClInclude Include="TimeController.h" />
     <ClInclude Include="TruckController.h" />
   </ItemGroup>
   <ItemGroup>

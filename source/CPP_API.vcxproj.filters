@@ -20,6 +20,7 @@
     <ClCompile Include="main.cpp">
       <Filter>_Main</Filter>
     </ClCompile>
+    <ClCompile Include="TimeController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -35,6 +36,7 @@
       <Filter>Component</Filter>
     </ClInclude>
     <ClInclude Include="TruckController.h" />
+    <ClInclude Include="TimeController.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
@@ -42,6 +44,9 @@
     </Filter>
     <Filter Include="Component">
       <UniqueIdentifier>{48039145-d229-4df7-b1ab-f994b3c1c589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{90c3df40-548f-4d5f-b497-998fb70baaed}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
