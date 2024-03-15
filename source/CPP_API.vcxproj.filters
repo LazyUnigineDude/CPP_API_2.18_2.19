@@ -20,7 +20,9 @@
     <ClCompile Include="main.cpp">
       <Filter>_Main</Filter>
     </ClCompile>
-    <ClCompile Include="TimeController.cpp" />
+    <ClCompile Include="TimeController.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
