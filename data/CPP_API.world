@@ -799,7 +799,20 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>-0.9999756217 -0.00697762751952 3.47616150975e-07 0.0 0.000730036292225 -0.104573190212 0.994516909122 0.0 -0.00693933200091 0.994492709637 0.104575753212 0.0 1.94088115318 4.5229017181 1.38959629705 1.0</transform>
+			<transform>0.999993920326 0.00349064799957 8.83524213878e-29 0.0 -0.00349064799957 0.999993920326 -2.71051318603e-20 0.0 -9.46145633335e-23 2.71049654548e-20 1 0.0 1.99999999995 -2.93613999197 9.53350499622 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1678831728" name="TimeController">
+			<properties>
+				<property parent="a2994dd48ba9f2da90b4fbdae3918b061e60105f" guid="dd6be2238bee6b5e62fb631f1922a04ba4e0518d">
+					<parameter name="Objects">
+						<value index="0">1220731747</value>
+						<value index="1">201836815</value>
+						<value index="2">1492994073</value>
+						<value index="3">913740452</value>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1220731747" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -814,10 +827,52 @@
 					<radius>0.663274825</radius>
 				</shape>
 			</body>
-			<properties>
-				<property parent="a2994dd48ba9f2da90b4fbdae3918b061e60105f" guid="d12802f3823055ea20c32bfbb8eb5ab6365baaf5"/>
-			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="201836815" name="material_ball_1">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1474086088" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="579203386" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -2 5.55111512313e-17 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1492994073" name="material_ball_2">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="579203386" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="790446204" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -4 5.55111512313e-17 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="913740452" name="material_ball_3">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1778601809" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="347644331" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -5.99999964237 0 1.0</transform>
 		</node>
 	</editor>
 	<console>

@@ -23,11 +23,15 @@ void TimeController::Init() {
 	GUI->addChild(PhysicsLabel, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 
 
-	TimeSlider = Unigine::WidgetSlider::create(1, 5, 1);
+	TimeSlider = Unigine::WidgetSlider::create(1, 5, 3);
 	TimeSlider->setWidth(150);
 	TimeSlider->setPosition(100, 200);
 	TimeSlider->getEventChanged().connect([&]() {Time = 0; });
 	GUI->addChild(TimeSlider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+
+	for (int i = 0; i < Objects.size(); i++) {
+		Starts.emplace_back(Objects[i]->getWorldPosition());
+	}
 }
 
 void TimeController::UpdateAsync() {
@@ -38,14 +42,14 @@ void TimeController::UpdateAsync() {
 
 void TimeController::Update() {
 
-	std::string _Speed = "Update: " + FloatToString(Unigine::Game::getIFps()) + " Seconds";
+	std::string _Speed = "Update: " + FloatToString(Unigine::Game::getIFps()) + " Frames";
 	UpdateLabel->setText(_Speed.c_str());
-	MoveObject();
+	MoveObjects();
 }
 
 void TimeController::UpdatePhysics() {
 
-	std::string _Speed = "Physics: " + FloatToString(Unigine::Physics::getIFps()) + " Seconds";
+	std::string _Speed = "Physics: " + FloatToString(Unigine::Physics::getIFps()) + " Frames 1/60";
 	PhysicsLabel->setText(_Speed.c_str());
 }
 
@@ -63,10 +67,26 @@ void TimeController::Shutdown() {
 	PhysicsLabel.deleteLater();
 }
 
-void TimeController::MoveObject() {
+void TimeController::MoveObjects() {
 
 	Time += Unigine::Game::getIFps();
-	Unigine::Math::Vec3 Pos = Unigine::Math::lerp(Unigine::Math::Vec3_zero, Unigine::Math::Vec3_left * -4, Time/TimeSlider->getValue());
-	node->setWorldPosition(Pos);
+	float t = Time / TimeSlider->getValue();
+	Unigine::Math::Vec3 Pos;
+
+	Pos = Lerper::Lerp(Starts[0], Starts[0] + End, t, Lerper::LINEAR);
+	Objects[0]->setWorldPosition(Pos);
+
+
+	Pos = Lerper::Lerp(Starts[1], Starts[1] + End, t, Lerper::EASE_IN);
+	Objects[1]->setWorldPosition(Pos);
+
+
+	Pos = Lerper::Lerp(Starts[2], Starts[2] + End, t, Lerper::EASE_OUT);
+	Objects[2]->setWorldPosition(Pos);
+
+
+	Pos = Lerper::Lerp(Starts[3], Starts[3] + End, t, Lerper::EASE_IN_OUT);
+	Objects[3]->setWorldPosition(Pos);
+
 	if (Time > TimeSlider->getValue()) Time = 0;
 }
