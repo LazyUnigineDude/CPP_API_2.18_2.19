@@ -17,6 +17,7 @@ public:
 		COMPONENT_UPDATE_ASYNC_THREAD(UpdateAsync)
 		COMPONENT_SHUTDOWN(Shutdown)
 		PROP_ARRAY(Node, Objects)
+		PROP_PARAM(Curve2d, Curve)
 
 private:
 	void Init(), UpdateAsync(), Update(), UpdatePhysics(), Shutdown();
@@ -41,16 +42,16 @@ struct Lerper {
 public:
 	enum LERP_TYPE { LINEAR, EASE_IN, EASE_OUT, EASE_IN_OUT };
 	static Unigine::Math::Vec3 Lerp(
-		Unigine::Math::Vec3 Start,
-		Unigine::Math::Vec3 End,
-		float T,
+		const Unigine::Math::Vec3& Start,
+		const Unigine::Math::Vec3& End,
+		const float& T,
 		LERP_TYPE TYPE = LINEAR);
 
 private:
 	static Unigine::Math::Vec3 MLerp(
 		Unigine::Math::Vec3 Start,
 		Unigine::Math::Vec3 End,
-		float T) {
+		const float& T) {
 		return Unigine::Math::Vec3(
 			Lerp(Start.x, End.x, T),
 			Lerp(Start.y, End.y, T),
@@ -58,28 +59,25 @@ private:
 		);
 	}
 
-	static float Lerp(float s, float e, float t) { return s + (e - s) * t; }
-	static float EIn(float T) { return T * T; }
-	static float EOut(float T) { return Flip(Squared(Flip(T))); }
-	static float EInOut(float T) { return Unigine::Math::lerp(EIn(T), EOut(T), T); }
-	static float Spike(float T) { if (T <= 0.5f) return EIn(T * 2); return EIn(Flip(T) * 2); }
+	static float Lerp(const float& s, const float& e, const float& t) { return s + (e - s) * t; }
+	static float EIn(const float& T) { return Squared(T); }
+	static float EOut(const float& T) { return Flip(Squared(Flip(T))); }
+	static float EInOut(const float& T) { return Unigine::Math::lerp(EIn(T), EOut(T), T); }
 
-
-	static float Flip(float x) { return 1 - x; }
-	static float Squared(float x) { return x * x; }
-
+	static float Flip(const float& t) { return 1 - t; }
+	static float Squared(const float& t) { return t * t; }
 };
 
 inline Unigine::Math::Vec3 Lerper::Lerp(
-	Unigine::Math::Vec3 Start,
-	Unigine::Math::Vec3 End,
-	float T,
+	const Unigine::Math::Vec3& Start,
+	const Unigine::Math::Vec3& End,
+	const float& T,
 	LERP_TYPE TYPE) {
 
 	switch (TYPE) {
 	case Lerper::EASE_IN:		return MLerp(Start, End, EIn(T));
 	case Lerper::EASE_OUT:		return MLerp(Start, End, EOut(T));
 	case Lerper::EASE_IN_OUT:	return MLerp(Start, End, EInOut(T));
-	default: return MLerp(Start, End, T);
+	default:					return MLerp(Start, End, T);
 	}
 }

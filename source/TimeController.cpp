@@ -76,7 +76,6 @@ void TimeController::MoveObjects() {
 	Pos = Lerper::Lerp(Starts[0], Starts[0] + End, t, Lerper::LINEAR);
 	Objects[0]->setWorldPosition(Pos);
 
-
 	Pos = Lerper::Lerp(Starts[1], Starts[1] + End, t, Lerper::EASE_IN);
 	Objects[1]->setWorldPosition(Pos);
 
@@ -88,5 +87,10 @@ void TimeController::MoveObjects() {
 	Pos = Lerper::Lerp(Starts[3], Starts[3] + End, t, Lerper::EASE_IN_OUT);
 	Objects[3]->setWorldPosition(Pos);
 
-	if (Time > TimeSlider->getValue()) Time = 0;
+
+	float tCurve = Curve->evaluate(t);
+	Pos = Lerper::Lerp(Starts[4], Starts[4] + End, tCurve, Lerper::LINEAR);
+	Objects[4]->setWorldPosition(Pos);
+
+	if (t > 1.0f) Time = 0;
 }
