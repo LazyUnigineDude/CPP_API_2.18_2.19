@@ -29,6 +29,11 @@ void TimeController::Init() {
 	TimeSlider->getEventChanged().connect([&]() {Time = 0; });
 	GUI->addChild(TimeSlider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 
+	StartAnim = Unigine::WidgetButton::create("Play");
+	StartAnim->setPosition(100, 250);
+	StartAnim->getEventClicked().connect([=]() { canAnimate = 1; });
+	GUI->addChild(StartAnim, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+
 	for (int i = 0; i < Objects.size(); i++) {
 		Starts.emplace_back(Objects[i]->getWorldPosition());
 	}
@@ -44,7 +49,7 @@ void TimeController::Update() {
 
 	std::string _Speed = "Update: " + FloatToString(Unigine::Game::getIFps()) + " Frames";
 	UpdateLabel->setText(_Speed.c_str());
-	MoveObjects();
+	if(canAnimate) MoveObjects();
 }
 
 void TimeController::UpdatePhysics() {
@@ -60,11 +65,13 @@ void TimeController::Shutdown() {
 	if (GUI->isChild(AsyncLabel)) GUI->removeChild(AsyncLabel);
 	if (GUI->isChild(UpdateLabel)) GUI->removeChild(UpdateLabel);
 	if (GUI->isChild(PhysicsLabel)) GUI->removeChild(PhysicsLabel);
+	if (GUI->isChild(StartAnim)) GUI->removeChild(StartAnim);
 
 
 	AsyncLabel.deleteLater();
 	UpdateLabel.deleteLater();
 	PhysicsLabel.deleteLater();
+	StartAnim.deleteLater();
 }
 
 void TimeController::MoveObjects() {
@@ -87,10 +94,12 @@ void TimeController::MoveObjects() {
 	Pos = Lerper::Lerp(Starts[3], Starts[3] + End, t, Lerper::EASE_IN_OUT);
 	Objects[3]->setWorldPosition(Pos);
 
-
-	float tCurve = Curve->evaluate(t);
-	Pos = Lerper::Lerp(Starts[4], Starts[4] + End, tCurve, Lerper::LINEAR);
+	Pos = Lerper::PingPong(Starts[4], Starts[4] + End, t, 1);
 	Objects[4]->setWorldPosition(Pos);
 
-	if (t > 1.0f) Time = 0;
+	float tCurve = Curve->evaluate(t);	
+	Pos = Lerper::Lerp(Starts[5], Starts[5] + End, tCurve, Lerper::LINEAR);
+	Objects[5]->setWorldPosition(Pos);
+
+	if (t > 1.0f) { Time = 0; canAnimate = 0; }
 }

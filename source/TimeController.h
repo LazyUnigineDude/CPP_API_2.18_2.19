@@ -25,7 +25,9 @@ private:
 
 	Unigine::WidgetLabelPtr AsyncLabel, UpdateLabel, PhysicsLabel;
 	Unigine::WidgetSliderPtr TimeSlider;
+	Unigine::WidgetButtonPtr StartAnim;
 	float Time;
+	bool canAnimate = 0;
 	Unigine::Vector<Unigine::Math::Vec3> Starts;
 	Unigine::Math::Vec3 End = Unigine::Math::Vec3_left * -4;
 };
@@ -46,6 +48,13 @@ public:
 		const Unigine::Math::Vec3& End,
 		const float& T,
 		LERP_TYPE TYPE = LINEAR);
+	
+	static Unigine::Math::Vec3 PingPong(
+		const Unigine::Math::Vec3& Start,
+		const Unigine::Math::Vec3& End,
+		const float& T,
+		const int& repeat
+	);
 
 private:
 	static Unigine::Math::Vec3 MLerp(
@@ -63,6 +72,14 @@ private:
 	static float EIn(const float& T) { return Squared(T); }
 	static float EOut(const float& T) { return Flip(Squared(Flip(T))); }
 	static float EInOut(const float& T) { return Unigine::Math::lerp(EIn(T), EOut(T), T); }
+	static float pingPong(const double& min, const double& max,const float& t, const int& repeat) {
+		double hRepeat = repeat * 0.5;
+		double phase = t / repeat;
+		double slope = (max - min) / hRepeat;
+
+		if (phase < hRepeat) { return min + (slope * phase); }
+		return max - (slope * (phase - hRepeat));
+	}
 
 	static float Flip(const float& t) { return 1 - t; }
 	static float Squared(const float& t) { return t * t; }
@@ -80,4 +97,17 @@ inline Unigine::Math::Vec3 Lerper::Lerp(
 	case Lerper::EASE_IN_OUT:	return MLerp(Start, End, EInOut(T));
 	default:					return MLerp(Start, End, T);
 	}
+}
+
+inline Unigine::Math::Vec3 Lerper::PingPong(
+	const Unigine::Math::Vec3& Start,
+	const Unigine::Math::Vec3& End,
+	const float& t,
+	const int& repeat) {
+
+	return Unigine::Math::Vec3(
+		pingPong(Start.x, End.x, t, repeat),
+		pingPong(Start.y, End.y, t, repeat),
+		pingPong(Start.z, End.z, t, repeat)
+	);
 }

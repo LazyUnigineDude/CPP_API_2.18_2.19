@@ -799,7 +799,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>0.999993920326 0.00349064753391 8.83524213875e-29 0.0 -0.00349064753391 0.999993920326 -2.71051318603e-20 0.0 -9.46145507117e-23 2.71049654548e-20 1 0.0 1.99999999995 -4 10 1.0</transform>
+			<transform>0.999993920326 0.00349059724249 1.45150406559e-27 0.0 -0.00349059724249 0.999993920326 -2.71051318603e-20 0.0 -9.46145507117e-23 2.71049654548e-20 1 0.0 2.00447951894 -5.28327718139 12.9643999971 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="1678831728" name="TimeController">
 			<properties>
@@ -810,13 +810,15 @@
 						<value index="2">1492994073</value>
 						<value index="3">913740452</value>
 						<value index="4">621545323</value>
+						<value index="5">202909404</value>
 					</parameter>
 					<parameter name="Curve">
-						<curve repeat_mode_start="1" repeat_mode_end="1">
+						<curve>
 							<keys>
 								<key point="0 0" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
-								<key point="0.5 1" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
-								<key point="1 0" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
+								<key point="0.258466393 0.614217579" left_tangent="-0.134121448 0.0402554274" right_tangent="0.127412081 -0.214696378"/>
+								<key point="0.597124577 0.815175712" left_tangent="-0.0301276445 0.285143554" right_tangent="0.16431272 -0.231469452"/>
+								<key point="1 1" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
 							</keys>
 						</curve>
 					</parameter>
@@ -898,6 +900,21 @@
 				</shape>
 			</body>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -7.99999952316 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="202909404" name="material_ball_5">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="395569489" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="395569489" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -9.99999940395 0 1.0</transform>
 		</node>
 	</editor>
 	<console>
