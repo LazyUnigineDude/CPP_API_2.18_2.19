@@ -2,7 +2,14 @@
 REGISTER_COMPONENT(ComponentCheck)
 REGISTER_COMPONENT(DerivedComponentCheck)
 
-void ComponentCheck::Init() { Unigine::Log::message("Base Init\n"); }
+void ComponentCheck::Init() { Unigine::Log::message("Base Init\n");
+
+clutter = Unigine::ObjectMeshClutter::create(Data);
+clutter->setWorldPosition(Unigine::Math::Vec3_zero);
+clutter->setSizeX(5);
+clutter->setSizeY(5);
+
+}
 void ComponentCheck::UpdateAsync() { }
 void ComponentCheck::UpdateSync() { }
 void ComponentCheck::Update() { }

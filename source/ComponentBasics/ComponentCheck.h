@@ -45,6 +45,9 @@ protected:
 		PROP_ARRAY_STRUCT(RandomStruct, OtherID, "Users", "Setup Other Users in Account", "Struct");
 
 	void Init(), UpdateAsync(), UpdateSync(), Update(), UpdatePost(), UpdatePhysics(), Swap(), Shutdown();
+
+private:
+	Unigine::ObjectMeshClutterPtr clutter;
 };
 
 struct DerivedComponentCheck : public ComponentCheck {

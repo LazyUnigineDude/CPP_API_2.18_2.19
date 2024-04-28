@@ -38,7 +38,9 @@
       <Filter>Component</Filter>
     </ClInclude>
     <ClInclude Include="TruckController.h" />
-    <ClInclude Include="TimeController.h" />
+    <ClInclude Include="TimeController.h">
+      <Filter>Time</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
