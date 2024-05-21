@@ -21,7 +21,10 @@
       <Filter>_Main</Filter>
     </ClCompile>
     <ClCompile Include="TimeController.cpp">
-      <Filter>Time</Filter>
+      <Filter>Coroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="Movement.cpp">
+      <Filter>Movement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -39,7 +42,10 @@
     </ClInclude>
     <ClInclude Include="TruckController.h" />
     <ClInclude Include="TimeController.h">
-      <Filter>Time</Filter>
+      <Filter>Coroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="Movement.h">
+      <Filter>Movement</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +55,10 @@
     <Filter Include="Component">
       <UniqueIdentifier>{48039145-d229-4df7-b1ab-f994b3c1c589}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Time">
+    <Filter Include="Movement">
+      <UniqueIdentifier>{fe89ca32-1bbd-4d69-82e4-d6410a4f8724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Coroutines">
       <UniqueIdentifier>{90c3df40-548f-4d5f-b497-998fb70baaed}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
