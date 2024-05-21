@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>63eb46d04bf8e1a8d6c6c3caeab2805236f6bf8b</guid>
+	<type>material_graph</type>
+	<hash>760a5848</hash>
+	<runtimes>
+		<runtime id="63eb46d04bf8e1a8d6c6c3caeab2805236f6bf8b" name="plane_mesh_base.mgraph" link="0"/>
+		<runtime id="7ee1e0828a41ebd279c8220cfe524a3aa0728ff5" name="plane_mesh_base" link="1" type="5"/>
+	</runtimes>
+</asset>

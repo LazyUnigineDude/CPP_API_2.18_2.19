@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>0d374be9965f4fb4bd126737c16eb1f89588cf66</guid>
+	<guid>0000000d000000ae000000da0000000e00000eca</guid>
 	<type>world</type>
-	<hash>521cdda9</hash>
+	<hash>9dc078b9</hash>
 	<runtimes>
-		<runtime id="0d374be9965f4fb4bd126737c16eb1f89588cf66" name="CPP_API.world" link="0"/>
+		<runtime id="0000000d000000ae000000da0000000e00000eca" name="CPP_API_Coroutines.world" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="string" name="physics_settings_path"/>
-		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="render_settings_path">guid://92a0ee7917704584f2b913132a497d56e78094bd</parameter>
 		<parameter type="string" name="script_name"/>
 		<parameter type="string" name="sound_settings_path"/>
 		<parameter type="string" name="viewports_settings"/>

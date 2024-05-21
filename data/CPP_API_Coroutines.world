@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <world version="2.18.0.1">
+	<render_settings_path>guid://92a0ee7917704584f2b913132a497d56e78094bd</render_settings_path>
 	<data>
+		<user/>
 		<unigine_editor>
 			<body>
 				<node_extensions/>
@@ -208,7 +210,7 @@
 		<render_bloom_scale>0.100000001</render_bloom_scale>
 		<render_border>0 0</render_border>
 		<render_budget>0.0160000008</render_budget>
-		<render_camera_effects_temporal_filtering>0</render_camera_effects_temporal_filtering>
+		<render_camera_effects_temporal_filtering>1</render_camera_effects_temporal_filtering>
 		<render_camera_effects_temporal_filtering_color_clamping_intensity>3</render_camera_effects_temporal_filtering_color_clamping_intensity>
 		<render_camera_effects_temporal_filtering_max_velocity_clamping>0.100000001</render_camera_effects_temporal_filtering_max_velocity_clamping>
 		<render_camera_effects_temporal_filtering_min_velocity_clamping>0.0500000007</render_camera_effects_temporal_filtering_min_velocity_clamping>
@@ -222,7 +224,7 @@
 		<render_clouds_3d_texture_vertical_resolution>3</render_clouds_3d_texture_vertical_resolution>
 		<render_clouds_accurate_layers_sorting>0</render_clouds_accurate_layers_sorting>
 		<render_clouds_depth_based_reconstruction>1</render_clouds_depth_based_reconstruction>
-		<render_clouds_depth_based_reconstruction_threshold>1</render_clouds_depth_based_reconstruction_threshold>
+		<render_clouds_depth_based_reconstruction_threshold>25</render_clouds_depth_based_reconstruction_threshold>
 		<render_clouds_distortion_texture>1</render_clouds_distortion_texture>
 		<render_clouds_downsampling_rendering>1</render_clouds_downsampling_rendering>
 		<render_clouds_dynamic_coverage_area>10000</render_clouds_dynamic_coverage_area>
@@ -262,19 +264,19 @@
 		<render_decal_distance>1e+09</render_decal_distance>
 		<render_decals>1</render_decals>
 		<render_denoise_ao_mask_radius>1</render_denoise_ao_mask_radius>
-		<render_denoise_color_clamping_blur_intensity>0</render_denoise_color_clamping_blur_intensity>
-		<render_denoise_color_clamping_blur_intensity_ao>0</render_denoise_color_clamping_blur_intensity_ao>
-		<render_denoise_color_clamping_blur_radius>12</render_denoise_color_clamping_blur_radius>
+		<render_denoise_color_clamping_blur_intensity>0.899999976</render_denoise_color_clamping_blur_intensity>
+		<render_denoise_color_clamping_blur_intensity_ao>0.100000001</render_denoise_color_clamping_blur_intensity_ao>
+		<render_denoise_color_clamping_blur_radius>8</render_denoise_color_clamping_blur_radius>
 		<render_denoise_denoise_mask_bias>0.00100000005</render_denoise_denoise_mask_bias>
-		<render_denoise_denoise_mask_denoise_threshold>0.100000001</render_denoise_denoise_mask_denoise_threshold>
-		<render_denoise_denoise_mask_frame_count>8</render_denoise_denoise_mask_frame_count>
+		<render_denoise_denoise_mask_denoise_threshold>0.0500000007</render_denoise_denoise_mask_denoise_threshold>
+		<render_denoise_denoise_mask_frame_count>15</render_denoise_denoise_mask_frame_count>
 		<render_denoise_denoise_mask_information_lost_boost>0</render_denoise_denoise_mask_information_lost_boost>
 		<render_denoise_denoise_mask_velocity_threshold>0</render_denoise_denoise_mask_velocity_threshold>
 		<render_denoise_hot_pixels_fix_intensity>0</render_denoise_hot_pixels_fix_intensity>
-		<render_denoise_information_lost_depth_threshold>0.00999999978</render_denoise_information_lost_depth_threshold>
+		<render_denoise_information_lost_depth_threshold>0.100000001</render_denoise_information_lost_depth_threshold>
 		<render_denoise_information_lost_fix_flicker>0.75</render_denoise_information_lost_fix_flicker>
-		<render_denoise_interleaved>1</render_denoise_interleaved>
-		<render_denoise_num_blur_iterations>3</render_denoise_num_blur_iterations>
+		<render_denoise_interleaved>0</render_denoise_interleaved>
+		<render_denoise_num_blur_iterations>5</render_denoise_num_blur_iterations>
 		<render_denoise_preset>sharpest_low</render_denoise_preset>
 		<render_denoise_radius>1</render_denoise_radius>
 		<render_depth_pre_pass>0</render_depth_pre_pass>
@@ -333,25 +335,25 @@
 		<render_indirect_diffuse_denoise_enabled>1</render_indirect_diffuse_denoise_enabled>
 		<render_indirect_diffuse_denoise_mask_enabled>1</render_indirect_diffuse_denoise_mask_enabled>
 		<render_indirect_diffuse_denoise_threshold>1</render_indirect_diffuse_denoise_threshold>
-		<render_indirect_diffuse_denoise_threshold_ao>1</render_indirect_diffuse_denoise_threshold_ao>
+		<render_indirect_diffuse_denoise_threshold_ao>0.100000001</render_indirect_diffuse_denoise_threshold_ao>
 		<render_indirect_diffuse_temporal_filtering_color_clamping_intensity>1</render_indirect_diffuse_temporal_filtering_color_clamping_intensity>
 		<render_indirect_diffuse_temporal_filtering_color_clamping_intensity_ao>1</render_indirect_diffuse_temporal_filtering_color_clamping_intensity_ao>
 		<render_indirect_diffuse_temporal_filtering_color_clamping_velocity_threshold>100</render_indirect_diffuse_temporal_filtering_color_clamping_velocity_threshold>
 		<render_indirect_diffuse_temporal_filtering_enabled>1</render_indirect_diffuse_temporal_filtering_enabled>
 		<render_indirect_diffuse_temporal_filtering_frame_count>16</render_indirect_diffuse_temporal_filtering_frame_count>
-		<render_indirect_diffuse_temporal_filtering_frame_count_min>1</render_indirect_diffuse_temporal_filtering_frame_count_min>
+		<render_indirect_diffuse_temporal_filtering_frame_count_min>50</render_indirect_diffuse_temporal_filtering_frame_count_min>
 		<render_indirect_diffuse_temporal_filtering_frames_clamping_velocity_threshold>10</render_indirect_diffuse_temporal_filtering_frames_clamping_velocity_threshold>
 		<render_indirect_lighting_interleaved>0</render_indirect_lighting_interleaved>
 		<render_indirect_specular_denoise_enabled>1</render_indirect_specular_denoise_enabled>
 		<render_indirect_specular_denoise_mask_enabled>1</render_indirect_specular_denoise_mask_enabled>
 		<render_indirect_specular_denoise_threshold>1</render_indirect_specular_denoise_threshold>
-		<render_indirect_specular_denoise_threshold_ao>1</render_indirect_specular_denoise_threshold_ao>
+		<render_indirect_specular_denoise_threshold_ao>0.100000001</render_indirect_specular_denoise_threshold_ao>
 		<render_indirect_specular_temporal_filtering_color_clamping_intensity>1</render_indirect_specular_temporal_filtering_color_clamping_intensity>
 		<render_indirect_specular_temporal_filtering_color_clamping_intensity_ao>1</render_indirect_specular_temporal_filtering_color_clamping_intensity_ao>
 		<render_indirect_specular_temporal_filtering_color_clamping_velocity_threshold>100</render_indirect_specular_temporal_filtering_color_clamping_velocity_threshold>
 		<render_indirect_specular_temporal_filtering_enabled>1</render_indirect_specular_temporal_filtering_enabled>
 		<render_indirect_specular_temporal_filtering_frame_count>16</render_indirect_specular_temporal_filtering_frame_count>
-		<render_indirect_specular_temporal_filtering_frame_count_min>1</render_indirect_specular_temporal_filtering_frame_count_min>
+		<render_indirect_specular_temporal_filtering_frame_count_min>50</render_indirect_specular_temporal_filtering_frame_count_min>
 		<render_indirect_specular_temporal_filtering_frames_clamping_velocity_threshold>10</render_indirect_specular_temporal_filtering_frames_clamping_velocity_threshold>
 		<render_iso>100</render_iso>
 		<render_landscape_cache_cpu_prefetch_radius>0</render_landscape_cache_cpu_prefetch_radius>
@@ -418,13 +420,13 @@
 		<render_lights_max_per_batch>1024</render_lights_max_per_batch>
 		<render_lights_tile_grid_size>8</render_lights_tile_grid_size>
 		<render_linear_depth_precision>0</render_linear_depth_precision>
-		<render_local_tonemapper>1</render_local_tonemapper>
+		<render_local_tonemapper>0</render_local_tonemapper>
 		<render_local_tonemapper_depth_threshold>0.899999976</render_local_tonemapper_depth_threshold>
-		<render_local_tonemapper_effect_on_dark_areas>0.0500000007</render_local_tonemapper_effect_on_dark_areas>
+		<render_local_tonemapper_effect_on_dark_areas>0.100000001</render_local_tonemapper_effect_on_dark_areas>
 		<render_local_tonemapper_luma_blurred_intensity>1</render_local_tonemapper_luma_blurred_intensity>
 		<render_local_tonemapper_num_blur_iterations>5</render_local_tonemapper_num_blur_iterations>
-		<render_local_tonemapper_target_middle_gray>0.600000024</render_local_tonemapper_target_middle_gray>
-		<render_local_tonemapper_tonemapping_intensity>0.400000006</render_local_tonemapper_tonemapping_intensity>
+		<render_local_tonemapper_target_middle_gray>0.400000006</render_local_tonemapper_target_middle_gray>
+		<render_local_tonemapper_tonemapping_intensity>0.5</render_local_tonemapper_tonemapping_intensity>
 		<render_max_fps>150</render_max_fps>
 		<render_max_num_active_targets>100</render_max_num_active_targets>
 		<render_metering_mask_enabled>0</render_metering_mask_enabled>
@@ -470,7 +472,7 @@
 		<render_shadow_distance_scale>1</render_shadow_distance_scale>
 		<render_shadows>1</render_shadows>
 		<render_shadows_alpha_test>1</render_shadows_alpha_test>
-		<render_shadows_filter_mode>4</render_shadows_filter_mode>
+		<render_shadows_filter_mode>2</render_shadows_filter_mode>
 		<render_shadows_filter_noise>0</render_shadows_filter_noise>
 		<render_shadows_penumbra_mode>0</render_shadows_penumbra_mode>
 		<render_shadows_penumbra_noise>1</render_shadows_penumbra_noise>
@@ -561,31 +563,31 @@
 		<render_ssrtgi_step_size>3</render_ssrtgi_step_size>
 		<render_ssrtgi_upscaling>1</render_ssrtgi_upscaling>
 		<render_sssss>0</render_sssss>
-		<render_sssss_ambient>1</render_sssss_ambient>
+		<render_sssss_ambient>0</render_sssss_ambient>
 		<render_sssss_color>1 0.400000006 0.200000003 1</render_sssss_color>
 		<render_sssss_diffuse>1</render_sssss_diffuse>
-		<render_sssss_interleaved>0</render_sssss_interleaved>
-		<render_sssss_interleaved_color_clamping>1</render_sssss_interleaved_color_clamping>
+		<render_sssss_interleaved>1</render_sssss_interleaved>
+		<render_sssss_interleaved_color_clamping>4</render_sssss_interleaved_color_clamping>
 		<render_sssss_interleaved_samples>0</render_sssss_interleaved_samples>
 		<render_sssss_max_threshold>10</render_sssss_max_threshold>
 		<render_sssss_min_threshold>4</render_sssss_min_threshold>
 		<render_sssss_noise_ray>0.5</render_sssss_noise_ray>
 		<render_sssss_noise_step>0.5</render_sssss_noise_step>
 		<render_sssss_preset>high</render_sssss_preset>
-		<render_sssss_quality>2</render_sssss_quality>
+		<render_sssss_quality>3</render_sssss_quality>
 		<render_sssss_radius>0.0199999996</render_sssss_radius>
 		<render_sssss_resolution>1</render_sssss_resolution>
 		<render_sssss_taa_antialiasing_in_motion>0</render_sssss_taa_antialiasing_in_motion>
 		<render_sssss_taa_catmull_resampling>1</render_sssss_taa_catmull_resampling>
 		<render_sssss_taa_fix_flicker>1</render_sssss_taa_fix_flicker>
 		<render_sssss_taa_frame_count>30</render_sssss_taa_frame_count>
-		<render_sssss_taa_frames_by_color>0</render_sssss_taa_frames_by_color>
+		<render_sssss_taa_frames_by_color>1</render_sssss_taa_frames_by_color>
 		<render_sssss_taa_frames_by_velocity>1</render_sssss_taa_frames_by_velocity>
 		<render_sssss_taa_frames_velocity_threshold>1</render_sssss_taa_frames_velocity_threshold>
 		<render_sssss_taa_max_frames_by_velocity>60</render_sssss_taa_max_frames_by_velocity>
 		<render_sssss_taa_min_frames_by_velocity>4</render_sssss_taa_min_frames_by_velocity>
 		<render_sssss_taa_pixel_offset>1</render_sssss_taa_pixel_offset>
-		<render_sssss_taa_preserve_details>0.5</render_sssss_taa_preserve_details>
+		<render_sssss_taa_preserve_details>1</render_sssss_taa_preserve_details>
 		<render_sssss_taa_samples>1</render_sssss_taa_samples>
 		<render_stereo_focus_supersampling>1</render_stereo_focus_supersampling>
 		<render_stereo_hidden_area>0</render_stereo_hidden_area>
@@ -643,7 +645,7 @@
 		<render_textures_min_resolution>0</render_textures_min_resolution>
 		<render_textures_quality>2</render_textures_quality>
 		<render_tonemapper>1</render_tonemapper>
-		<render_tonemapper_mode>1</render_tonemapper_mode>
+		<render_tonemapper_mode>2</render_tonemapper_mode>
 		<render_translucent_color>1 1 1 1</render_translucent_color>
 		<render_transparent_ambient>1</render_transparent_ambient>
 		<render_transparent_blur>1</render_transparent_blur>
@@ -721,8 +723,8 @@
 			<vertex type="float" num_vertex="121" offset="32" size="4">0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1</vertex>
 			<vertex type="float" num_vertex="121" offset="48" size="4">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vertex>
 			<indices num_indices="600">107 106 117 118 119 107 107 119 108 118 107 117 18 19 7 7 19 8 19 18 29 30 19 29 9 8 19 30 31 19 20 9 19 19 31 20 43 41 29 29 41 30 31 30 41 110 111 99 99 111 100 99 105 116 110 99 116 112 101 111 101 100 111 104 116 105 115 116 104 112 113 101 101 113 102 115 104 114 3 2 13 14 3 13 24 13 23 24 25 13 13 25 14 24 35 25 23 35 24 23 22 37 34 23 37 34 35 23 35 33 25 45 35 46 45 44 35 35 44 33 35 34 46 0 11 1 6 11 0 11 12 1 11 17 28 17 11 6 22 11 28 22 23 11 11 23 12 12 13 1 1 13 2 6 5 16 17 6 16 13 12 23 77 66 79 79 91 77 79 78 89 90 91 79 90 79 89 79 68 78 91 90 101 102 91 101 81 78 68 81 89 78 101 89 100 89 101 90 89 88 99 100 89 99 88 89 81 4 10 21 15 4 21 16 4 15 4 16 5 9 21 10 21 20 31 32 21 31 20 21 9 26 21 32 21 26 15 16 15 26 54 64 53 64 54 65 75 64 76 64 65 76 76 85 75 87 85 76 85 87 95 96 85 95 96 97 85 85 97 86 107 95 106 95 107 96 97 96 107 108 97 107 108 109 97 97 109 98 98 83 97 83 86 97 82 84 92 93 82 92 83 92 84 92 98 109 103 92 109 103 104 92 92 104 93 98 92 83 120 109 119 114 109 120 109 114 103 109 108 119 104 103 114 45 56 44 56 55 44 46 56 45 67 56 68 67 66 56 56 46 57 56 66 55 56 57 68 46 47 58 57 46 58 66 67 79 68 79 67 42 31 41 42 39 31 31 39 32 39 42 52 41 52 42 41 43 54 53 41 54 52 41 53 51 39 52 51 50 39 39 50 40 63 52 64 63 62 52 52 53 64 52 62 51 69 81 68 70 81 69 81 80 94 88 81 94 80 81 70 70 71 82 80 70 82 82 94 80 94 93 104 105 94 104 105 99 94 94 99 88 93 94 82 16 28 17 27 16 26 27 28 16 28 37 22 28 27 38 36 28 38 37 28 36 26 38 27 40 38 26 26 32 39 40 26 39 37 46 34 37 36 48 47 37 48 47 46 37 38 48 36 38 40 50 49 38 50 49 48 38 61 50 62 50 51 62 62 72 61 62 63 74 73 62 74 72 62 73 84 72 83 82 72 84 72 73 83 72 82 71 64 74 63 74 75 85 86 74 85 74 64 75 86 83 74 74 83 73 48 58 47 59 48 60 59 58 48 48 49 60 69 68 58 58 68 57 58 59 70 69 58 70 60 70 59 60 61 72 71 60 72 61 60 50 70 60 71 50 60 49</indices>
-			<surface name="grid_for_world_creation" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<surface name="grid_for_world_creation" physics_intersection="1" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="9c2e1699ac668a58d63991cd490039f38fe1a894"/>
+			<transform>50 0 0 0.0 0 50 0 0.0 0 0 0.999999880791 0.0 0 0 0 1.0</transform>
 		</node>
 		<node type="LightWorld" id="824505625" name="sun">
 			<scattering>1</scattering>
@@ -801,72 +803,136 @@
 			</lens_flare_billboards>
 			<transform>-0.43301237 0.43559623 -0.78914917 0.0 -0.75000048 -0.6597392 0.047366858 0.0 -0.49999967 0.61237252 0.6123724 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="PlayerSpectator" id="620479819" name="main_player">
-			<collision>1</collision>
-			<collision_mask>0x1</collision_mask>
-			<collision_radius>0.5</collision_radius>
-			<min_velocity>2</min_velocity>
-			<max_velocity>4</max_velocity>
-			<min_theta_angle>-89.9000015</min_theta_angle>
-			<max_theta_angle>89.9000015</max_theta_angle>
-			<acceleration>4</acceleration>
-			<damping>8</damping>
-			<turning>90</turning>
+		<node type="PlayerDummy" id="1619449493" name="PlayerDummy">
+			<znear>0.300000012</znear>
 			<zfar>100000</zfar>
 			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
-			<controlled>0</controlled>
-			<transform>0.895706057549 0.444646626711 1.95205211643e-06 0.0 -0.260108500719 0.523964762688 0.811051487923 0.0 0.360630273819 -0.726464271545 0.584974765778 0.0 3.08147407441 -2.82285647855 3.90730629323 1.0</transform>
+			<controlled>1</controlled>
+			<transform>0.999993920326 0.00349048757926 -2.27373675345e-12 0.0 -0.00349046615884 0.999987840652 0.00349065102637 0.0 1.21840766951e-05 -0.00349062960595 0.999993920326 0.0 1.40401030587 -5.08839037111 11.3288202901 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="646358950" name="Movement">
+		<node type="NodeDummy" id="1678831728" name="TimeController">
 			<properties>
-				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="c063749ab05d6b981a440ae4be6975e2f6e8daad">
-					<parameter name="MoveTNode">580337726</parameter>
-					<parameter name="MovePNode">126815106</parameter>
+				<property parent="a2994dd48ba9f2da90b4fbdae3918b061e60105f" guid="dd6be2238bee6b5e62fb631f1922a04ba4e0518d">
+					<parameter name="Objects">
+						<value index="0">1220731747</value>
+						<value index="1">201836815</value>
+						<value index="2">1492994073</value>
+						<value index="3">913740452</value>
+						<value index="4">621545323</value>
+						<value index="5">202909404</value>
+					</parameter>
+					<parameter name="Curve">
+						<curve>
+							<keys>
+								<key point="0 0" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
+								<key point="0.258466393 0.614217579" left_tangent="-0.134121448 0.0402554274" right_tangent="0.127412081 -0.214696378"/>
+								<key point="0.597124577 0.815175712" left_tangent="-0.0301276445 0.285143554" right_tangent="0.16431272 -0.231469452"/>
+								<key point="1 1" left_tangent="-0.00999999046 0" right_tangent="0.00999999046 0"/>
+							</keys>
+						</curve>
+					</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			<node type="ObjectMeshStatic" id="126815106" enabled="0" name="PNode">
-				<streaming_mode_vram>0</streaming_mode_vram>
-				<streaming_mode_ram>0</streaming_mode_ram>
-				<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
-				<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
-				<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
-				<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
-				<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 1 0.0 -1.0000000596 0 0 1.0</transform>
-			</node>
-			<node type="ObjectMeshStatic" id="580337726" name="TNode">
-				<streaming_mode_vram>0</streaming_mode_vram>
-				<streaming_mode_ram>0</streaming_mode_ram>
-				<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
-				<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
-				<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
-				<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
-				<body type="BodyRigid" id="449847631" frozen="0">
-					<angular_scale>0 0 1</angular_scale>
-					<max_linear_velocity>5</max_linear_velocity>
-					<shape type="ShapeCapsule" id="1519573424" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.506112397 1">
-						<radius>0.434608012</radius>
-						<height>0.154397383</height>
-					</shape>
-				</body>
-				<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 0 0 5.96046483281e-08 1.0</transform>
-			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="1298349322" enabled="0" immovable="1" name="Test">
+		<node type="ObjectMeshStatic" id="1220731747" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
-			<mesh_name>guid://0e388d4d123644d96f83e07b63dc82883e33ff9a</mesh_name>
-			<surface name="plane" intersection="1" collision="1" material="7ee1e0828a41ebd279c8220cfe524a3aa0728ff5"/>
-			<transform>0.999999880791 0 0 0.0 0 0.953381240368 0.301768094301 0.0 0 -0.301768094301 0.953381299973 0.0 0 4.79487754678 0.64804700961 1.0</transform>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1341893589" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="1355209789" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="201836815" name="material_ball_1">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1474086088" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="579203386" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -2 5.55111512313e-17 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1492994073" name="material_ball_2">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="579203386" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="790446204" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -4 5.55111512313e-17 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="913740452" name="material_ball_3">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1778601809" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="347644331" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -5.99999964237 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="621545323" name="material_ball_4">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="1141640102" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="1141640102" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -7.99999952316 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="202909404" name="material_ball_5">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<body type="BodyRigid" id="395569489" frozen="0">
+				<angular_scale>0 0 1</angular_scale>
+				<shape type="ShapeSphere" id="395569489" transform="1 0 0 0 0 1 0 0 0 0 1 0 -3.65301967e-05 -0.0132298619 0.499668062 1">
+					<radius>0.663274825</radius>
+				</shape>
+			</body>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -9.99999940395 0 1.0</transform>
 		</node>
 	</editor>
 	<console>
-		<bake_lighting_bounces>4</bake_lighting_bounces>
+		<bake_lighting_bounces>5</bake_lighting_bounces>
 		<bake_lighting_voxel_size_multiplier>1</bake_lighting_voxel_size_multiplier>
-		<bake_lightmap_quality>3</bake_lightmap_quality>
+		<bake_lightmap_quality>2</bake_lightmap_quality>
 		<bake_lightmap_viewport_mask>-1</bake_lightmap_viewport_mask>
 		<bake_lightmap_zfar>1000</bake_lightmap_zfar>
 		<world_moving_immovable_node_mode>1</world_moving_immovable_node_mode>
