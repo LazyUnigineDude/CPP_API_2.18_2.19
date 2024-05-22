@@ -818,7 +818,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>0</controlled>
-			<transform>0.895706057549 0.444646626711 1.95205211643e-06 0.0 -0.260108500719 0.523964762688 0.811051487923 0.0 0.360630273819 -0.726464271545 0.584974765778 0.0 3.08147407441 -2.82285647855 3.90730629323 1.0</transform>
+			<transform>0.999999940395 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999880791 0.0 0 0 5 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="646358950" name="Movement">
 			<properties>
@@ -828,7 +828,7 @@
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-			<node type="ObjectMeshStatic" id="126815106" name="PNode">
+			<node type="ObjectMeshStatic" id="126815106" enabled="0" name="PNode">
 				<streaming_mode_vram>0</streaming_mode_vram>
 				<streaming_mode_ram>0</streaming_mode_ram>
 				<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
@@ -858,7 +858,7 @@
 				<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 0 0 5.96046483281e-08 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="1298349322" immovable="1" name="Test">
+		<node type="ObjectMeshStatic" id="1298349322" enabled="0" immovable="1" name="Test">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://0e388d4d123644d96f83e07b63dc82883e33ff9a</mesh_name>
