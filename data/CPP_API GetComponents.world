@@ -818,9 +818,18 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>0</controlled>
-			<transform>0.10807493329 0.994142889977 -2.53319740295e-06 0.0 0.34968316555 -0.0380124747753 0.936096668243 0.0 0.930613636971 -0.101169586182 -0.351743340492 0.0 4.42926332058 -1.77970887821 0.499999244709 1.0</transform>
+			<transform>0.862528979778 -0.506007671356 7.16745853424e-06 0.0 0.142872080207 0.24354994297 0.959307610989 0.0 -0.485418736935 -0.827429592609 0.28236323595 0.0 -1.916226915 -2.7421880947 1.90633018275 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="1702994992" name="material_ball">
+		<node type="ObjectMeshStatic" id="1492681673" name="Evil MatBall">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="d0bb2db25d43364c847cc0bc49601137bf6cae65"/>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.999999940395 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="900949219" name="MatBall">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
@@ -828,9 +837,17 @@
 			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
 			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
 			<properties>
-				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="d307a68346deda8b9258278f2b3f4540046c67a9"/>
+				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="605e40dd07daea39ac89e0a8363ea26fb9ff0f8f"/>
 			</properties>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -2 1.19209289551e-07 1.0</transform>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 1.0000000596 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1347784112" name="Get Components">
+			<properties>
+				<property parent="8d89dd77e2e86895378b3c9269372d96635ff306" guid="58fb5c5da27f963739567e86042c092d739630f0">
+					<parameter name="NodeItem">900949219</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -2.75184807753 -4.08618780466 2.33766022052 1.0</transform>
 		</node>
 	</editor>
 	<console>

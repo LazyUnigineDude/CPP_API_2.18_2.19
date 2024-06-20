@@ -3,7 +3,7 @@ REGISTER_COMPONENT(Movement)
 
 void Movement::Init() {
 
-	_Physics = MoveObj->getObjectBodyRigid();
+	_Physics = node->getObjectBodyRigid();
 }
 
 void Movement::Update() {
@@ -31,30 +31,30 @@ void Movement::UpdatePhysics() {
 	//PhysicsCombinedMovement();
 
 	//// Test
-	//_Physics->addLinearImpulse(MoveObj->getWorldDirection(Unigine::Math::AXIS_Y) * Speed * Unigine::Physics::getIFps());
+	//_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_Y) * Speed * Unigine::Physics::getIFps());
 }
 
 void Movement::ChessMovement() {
 	
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_W)) {
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Unigine::Math::Vec3_forward);
+		node->setWorldPosition(node->getWorldPosition() + Unigine::Math::Vec3_forward);
 		Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_S)) {
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Unigine::Math::Vec3_back);
+		node->setWorldPosition(node->getWorldPosition() + Unigine::Math::Vec3_back);
 		Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_A)) {
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Unigine::Math::Vec3_left);
+		node->setWorldPosition(node->getWorldPosition() + Unigine::Math::Vec3_left);
 		Unigine::Log::message("Pressed A, Left\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_D)) {
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Unigine::Math::Vec3_right);
+		node->setWorldPosition(node->getWorldPosition() + Unigine::Math::Vec3_right);
 		Unigine::Log::message("Pressed D, Right\n");
 	}
 }
@@ -62,13 +62,13 @@ void Movement::ChessMovement() {
 void Movement::ChessRot() {
 	
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_Q)) {
-		MoveObj->worldRotate(Unigine::Math::quat(0, 0, 15));
+		node->worldRotate(Unigine::Math::quat(0, 0, 15));
 		Unigine::Log::message("Pressed Q, CounterClockwise Rotation by 15\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_E)) {
-		MoveObj->worldRotate(Unigine::Math::quat(0, 0, -15));
+		node->worldRotate(Unigine::Math::quat(0, 0, -15));
 		Unigine::Log::message("Pressed E, ClockWise Rotation by 15\n");
 	}
 }
@@ -84,28 +84,28 @@ void Movement::ChessFixedMovement() {
 	Unigine::Math::Vec3 Pos;
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_W)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_Y));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Pos);
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_Y));
+		node->setWorldPosition(node->getWorldPosition() + Pos);
 		Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_S)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_NY));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Pos);
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NY));
+		node->setWorldPosition(node->getWorldPosition() + Pos);
 		Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_A)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_NX));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Pos);
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NX));
+		node->setWorldPosition(node->getWorldPosition() + Pos);
 		Unigine::Log::message("Pressed A, Left\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_D)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_X));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + Pos);
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_X));
+		node->setWorldPosition(node->getWorldPosition() + Pos);
 		Unigine::Log::message("Pressed D, Right\n");
 	}
 }
@@ -122,28 +122,28 @@ void Movement::ConstMovement() {
 
 	Unigine::Math::Vec3 Pos;
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_W)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_Y));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_Y));
+		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
 		Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_S)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_NY));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NY));
+		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
 		Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_A)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_NX));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NX));
+		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
 		Unigine::Log::message("Pressed A, Left\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_D)) {
-		Pos = Unigine::Math::Vec3(MoveObj->getWorldDirection(Unigine::Math::AXIS_X));
-		MoveObj->setWorldPosition(MoveObj->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
+		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_X));
+		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
 		Unigine::Log::message("Pressed D, Right\n");
 	}
 }
@@ -151,13 +151,13 @@ void Movement::ConstMovement() {
 void Movement::ConstRot() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_Q)) {
-		MoveObj->worldRotate(Unigine::Math::quat(0, 0, 1));
+		node->worldRotate(Unigine::Math::quat(0, 0, 1));
 		Unigine::Log::message("Pressed Q, CounterClockwise Rotation\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_E)) {
-		MoveObj->worldRotate(Unigine::Math::quat(0, 0, -1));
+		node->worldRotate(Unigine::Math::quat(0, 0, -1));
 		Unigine::Log::message("Pressed E, ClockWise Rotation\n");
 	}
 }
@@ -199,22 +199,22 @@ void Movement::PhysicsFixedMovement() {
 	float _Speed = Speed * Unigine::Physics::getIFps();
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_W)) {
-		_Physics->addLinearImpulse(MoveObj->getWorldDirection(Unigine::Math::AXIS_Y) * _Speed);
+		_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_Y) * _Speed);
 		Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_S)) {
-		_Physics->addLinearImpulse(MoveObj->getWorldDirection(Unigine::Math::AXIS_NY) * _Speed);
+		_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_NY) * _Speed);
 		Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_A)) {
-		_Physics->addLinearImpulse(MoveObj->getWorldDirection(Unigine::Math::AXIS_NX) * _Speed);
+		_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_NX) * _Speed);
 		Unigine::Log::message("Pressed A, Left\n");
 	}
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_D)) {
-		_Physics->addLinearImpulse(MoveObj->getWorldDirection(Unigine::Math::AXIS_X) * _Speed);
+		_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_X) * _Speed);
 		Unigine::Log::message("Pressed D, Right\n");
 	}
 	////Speed
@@ -224,13 +224,13 @@ void Movement::PhysicsFixedMovement() {
 void Movement::PhysicsRot() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_Q)) {
-		_Physics->addAngularImpulse(-MoveObj->getWorldDirection() * Unigine::Physics::getIFps());
+		_Physics->addAngularImpulse(-node->getWorldDirection() * Unigine::Physics::getIFps());
 		Unigine::Log::message("Pressed Q, CounterClockwise Rotation\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_E)) {
-		_Physics->addAngularImpulse(MoveObj->getWorldDirection() * Unigine::Physics::getIFps());
+		_Physics->addAngularImpulse(node->getWorldDirection() * Unigine::Physics::getIFps());
 		Unigine::Log::message("Pressed E, ClockWise Rotation\n");
 	}
 }

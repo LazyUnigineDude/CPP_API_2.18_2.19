@@ -49,7 +49,7 @@ void TimeController::Update() {
 
 	std::string _Speed = "Update: " + FloatToString(Unigine::Game::getIFps()) + " Frames";
 	UpdateLabel->setText(_Speed.c_str());
-	if(canAnimate) MoveObjects();
+	if(canAnimate) nodeects();
 }
 
 void TimeController::UpdatePhysics() {
@@ -74,7 +74,7 @@ void TimeController::Shutdown() {
 	StartAnim.deleteLater();
 }
 
-void TimeController::MoveObjects() {
+void TimeController::nodeects() {
 
 	Time += Unigine::Game::getIFps();
 	float t = Time / TimeSlider->getValue();

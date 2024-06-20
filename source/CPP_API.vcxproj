@@ -75,19 +75,19 @@
     <ClCompile Include="AppSystemLogic.cpp" />
     <ClCompile Include="AppWorldLogic.cpp" />
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp" />
+    <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
+    <ClCompile Include="Coroutines\TimeController.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Movement.cpp" />
-    <ClCompile Include="TimeController.cpp" />
-    <ClCompile Include="TruckController.cpp" />
+    <ClCompile Include="Movements\Movement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h" />
     <ClInclude Include="AppSystemLogic.h" />
     <ClInclude Include="AppWorldLogic.h" />
     <ClInclude Include="ComponentBasics\ComponentCheck.h" />
-    <ClInclude Include="Movement.h" />
-    <ClInclude Include="TimeController.h" />
-    <ClInclude Include="TruckController.h" />
+    <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
+    <ClInclude Include="Coroutines\TimeController.h" />
+    <ClInclude Include="Movements\Movement.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />

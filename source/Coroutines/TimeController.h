@@ -21,7 +21,7 @@ public:
 
 private:
 	void Init(), UpdateAsync(), Update(), UpdatePhysics(), Shutdown();
-	void MoveObjects();
+	void nodeects();
 
 	Unigine::WidgetLabelPtr AsyncLabel, UpdateLabel, PhysicsLabel;
 	Unigine::WidgetSliderPtr TimeSlider;

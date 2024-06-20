@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>7ffbc8c7b7c0e69d9d4562d8b0f7a0c2a52506d2</guid>
+	<type>world</type>
+	<hash>8d41e514</hash>
+	<runtimes>
+		<runtime id="7ffbc8c7b7c0e69d9d4562d8b0f7a0c2a52506d2" name="CPP_API GetComponents.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="script_name"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="viewports_settings"/>
+	</parameters>
+</asset>

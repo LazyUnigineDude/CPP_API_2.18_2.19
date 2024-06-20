@@ -16,15 +16,17 @@
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp">
       <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="TruckController.cpp" />
     <ClCompile Include="main.cpp">
       <Filter>_Main</Filter>
     </ClCompile>
-    <ClCompile Include="TimeController.cpp">
-      <Filter>Coroutines</Filter>
+    <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp">
+      <Filter>Component</Filter>
     </ClCompile>
-    <ClCompile Include="Movement.cpp">
+    <ClCompile Include="Movements\Movement.cpp">
       <Filter>Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="Coroutines\TimeController.cpp">
+      <Filter>Coroutines</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -40,12 +42,14 @@
     <ClInclude Include="ComponentBasics\ComponentCheck.h">
       <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="TruckController.h" />
-    <ClInclude Include="TimeController.h">
-      <Filter>Coroutines</Filter>
+    <ClInclude Include="ComponentBasics\GettingComponentsLogic.h">
+      <Filter>Component</Filter>
     </ClInclude>
-    <ClInclude Include="Movement.h">
+    <ClInclude Include="Movements\Movement.h">
       <Filter>Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="Coroutines\TimeController.h">
+      <Filter>Coroutines</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

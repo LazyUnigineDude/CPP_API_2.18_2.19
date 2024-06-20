@@ -9,14 +9,16 @@ public:
 		COMPONENT_UPDATE(Update)
 		COMPONENT_UPDATE_PHYSICS(UpdatePhysics)
 
-		PROP_PARAM(Node, MoveObj)
-		PROP_PARAM(Node, MoveObj2)
+		//PROP_PARAM(Node, node)
+		//PROP_PARAM(Node, MoveObj2)
+
+		void ChessMovement();
 
 protected:
 	void Init(), Update(), UpdatePhysics();
 
 private:
-	void ChessMovement(), ChessRot(),  ChessCombined(), ChessFixedMovement(), ChessFixedCombined();
+	void ChessRot(),  ChessCombined(), ChessFixedMovement(), ChessFixedCombined();
 	void ConstMovement(), ConstRot(), ConstCombined();
 
 	void PhysicsMovement(), PhysicsFixedMovement(), PhysicsRot(), PhysicsCombinedMovement();
@@ -25,7 +27,7 @@ private:
 	float Speed = 10;
 };
 
-double GetSpeed(Unigine::Math::vec3 Vel) {
+inline double GetSpeed(Unigine::Math::vec3 Vel) {
 
 	double speed = Unigine::Math::length2(Vel);
 	return Unigine::Math::sqrtFast(speed);
