@@ -76,6 +76,7 @@
     <ClCompile Include="AppWorldLogic.cpp" />
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp" />
     <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
+    <ClCompile Include="Coroutines\DayNightCycle.cpp" />
     <ClCompile Include="Coroutines\TimeController.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Movements\Movement.cpp" />
@@ -86,6 +87,7 @@
     <ClInclude Include="AppWorldLogic.h" />
     <ClInclude Include="ComponentBasics\ComponentCheck.h" />
     <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
+    <ClInclude Include="Coroutines\DayNightCycle.h" />
     <ClInclude Include="Coroutines\TimeController.h" />
     <ClInclude Include="Movements\Movement.h" />
   </ItemGroup>

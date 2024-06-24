@@ -1,5 +1,5 @@
 #include <Unigine.h>
-#include "Movement.h"
+#include "../Movements/Movement.h"
 
 struct GettingComponentsLogic : public Unigine::ComponentBase {
 

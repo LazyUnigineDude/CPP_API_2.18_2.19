@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>3eb441c78a65417117ab871a5a3cd7a51847d260</guid>
+	<type>world</type>
+	<hash>8ea6dc82</hash>
+	<runtimes>
+		<runtime id="3eb441c78a65417117ab871a5a3cd7a51847d260" name="CPP_API_DayNIght.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="script_name"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="viewports_settings"/>
+	</parameters>
+</asset>
