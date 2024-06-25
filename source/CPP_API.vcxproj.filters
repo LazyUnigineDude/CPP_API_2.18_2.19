@@ -31,6 +31,9 @@
     <ClCompile Include="Coroutines\DayNightCycle.cpp">
       <Filter>Coroutines</Filter>
     </ClCompile>
+    <ClCompile Include="Intersections\Simple.cpp">
+      <Filter>Intersections</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -57,6 +60,9 @@
     <ClInclude Include="Coroutines\DayNightCycle.h">
       <Filter>Coroutines</Filter>
     </ClInclude>
+    <ClInclude Include="Intersections\Simple.h">
+      <Filter>Intersections</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
@@ -70,6 +76,9 @@
     </Filter>
     <Filter Include="Movements">
       <UniqueIdentifier>{fe89ca32-1bbd-4d69-82e4-d6410a4f8724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Intersections">
+      <UniqueIdentifier>{b1e4bf76-85bb-47af-873d-e913247e5c50}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
