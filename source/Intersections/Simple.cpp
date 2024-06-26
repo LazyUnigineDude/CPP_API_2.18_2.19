@@ -7,8 +7,8 @@ void SimpleDetect::Init() {
 	SetPoints(Unigine::Math::AXIS_Y, Distance, node);
 
 	// Offset cause CenterPoint is on Floor
-	P0 += Unigine::Math::Vec3(0, 0, 0.5);
-	P1 += Unigine::Math::Vec3(0, 0, 0.5);
+	P0 += Offset;
+	P1 += Offset;
 
 	InitLabel();
 }
