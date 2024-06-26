@@ -92,7 +92,9 @@
     <ClInclude Include="Coroutines\TimeController.h" />
     <ClInclude Include="Intersections\Simple.h" />
     <ClInclude Include="Movements\ChessMovement.h" />
+    <ClInclude Include="Movements\ConstMovement.h" />
     <ClInclude Include="Movements\Movement.h" />
+    <ClInclude Include="Movements\PhysicsMovement.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />

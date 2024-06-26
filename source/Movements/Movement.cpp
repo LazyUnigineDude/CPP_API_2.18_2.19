@@ -1,24 +1,22 @@
 #include "Movement.h"
-#include "ChessMovement.h"
 REGISTER_COMPONENT(Movement)
 REGISTER_COMPONENT(ChessMovement)
+REGISTER_COMPONENT(ConstMovement)
+REGISTER_COMPONENT(PhysicsMovement)
 
 void Movement::Init() {
 
-	_Physics = node->getObjectBodyRigid();
+	Chess = getComponent<ChessMovement>(ChessNode);
+	Const = getComponent<ConstMovement>(ConstNode);
+	Physics = getComponent<PhysicsMovement>(PhysicNode);
+
+	if(Physics) Physics->Init();
 }
 
 void Movement::Update() {
-
-	//ChessMovement();
-	//ChessRot();
-	//ChessCombined();
-	//ChessFixedMovement();
-	//ChessFixedCombined();
-
-	//ConstMovement();
-	//ConstRot();
-	//ConstCombined();
+	
+	if (Chess) Chess->FixedCombined();
+	if (Const) Const->Combined();
 
 	//// Test
 	//Unigine::Math::Vec3 Pos = Unigine::Math::Vec3(MoveObj2->getWorldDirection(Unigine::Math::AXIS_Y));
@@ -26,11 +24,8 @@ void Movement::Update() {
 }
 
 void Movement::UpdatePhysics() {
-
-	//PhysicsMovement();
-	//PhysicsFixedMovement();
-	//PhysicsRot();
-	//PhysicsCombinedMovement();
+	
+	if (Physics) Physics->Combined();
 
 	//// Test
 	//_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_Y) * Speed * Unigine::Physics::getIFps());
@@ -112,7 +107,7 @@ void ChessMovement::FixedMove() {
 	}
 }
 
-void ChessMovement::FixedCombine() {
+void ChessMovement::FixedCombined() {
 
 	FixedMove();
 	Rot();
@@ -120,7 +115,7 @@ void ChessMovement::FixedCombine() {
 
 ///////////////////////////////////////////////////////////////////
 
-void Movement::ConstMovement() {
+void ConstMovement::Movement() {
 
 	Unigine::Math::Vec3 Pos;
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_W)) {
@@ -150,7 +145,7 @@ void Movement::ConstMovement() {
 	}
 }
 
-void Movement::ConstRot() {
+void ConstMovement::Rot() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_Q)) {
 		node->worldRotate(Unigine::Math::quat(0, 0, 1));
@@ -164,16 +159,16 @@ void Movement::ConstRot() {
 	}
 }
 
-void Movement::ConstCombined() {
+void ConstMovement::Combined() {
 
-	ConstMovement();
-	ConstRot();
+	Movement();
+	Rot();
 }
 
 ////////////////////////////////////////////////////////////////
 
 
-void Movement::PhysicsMovement() {
+void PhysicsMovement::Movement() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_W)) {
 		_Physics->addLinearImpulse(Unigine::Math::vec3_forward );
@@ -196,7 +191,7 @@ void Movement::PhysicsMovement() {
 	}
 }
 
-void Movement::PhysicsFixedMovement() {
+void PhysicsMovement::FixedMovement() {
 
 	float _Speed = Speed * Unigine::Physics::getIFps();
 
@@ -223,7 +218,7 @@ void Movement::PhysicsFixedMovement() {
 	//Unigine::Log::message("Speed: %.2f \n", GetSpeed(_Physics->getLinearVelocity()));
 }
 
-void Movement::PhysicsRot() {
+void PhysicsMovement::Rot() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_Q)) {
 		_Physics->addAngularImpulse(-node->getWorldDirection() * Unigine::Physics::getIFps());
@@ -237,8 +232,8 @@ void Movement::PhysicsRot() {
 	}
 }
 
-void Movement::PhysicsCombinedMovement() {
+void PhysicsMovement::Combined() {
 	
-	PhysicsFixedMovement();
-	PhysicsRot();
+	FixedMovement();
+	Rot();
 }

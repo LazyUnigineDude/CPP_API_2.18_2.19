@@ -12,5 +12,5 @@ public:
 
 protected:
 	void Init(), Update();
-	Movement* _Movement;
+	ChessMovement* _Movement;
 };

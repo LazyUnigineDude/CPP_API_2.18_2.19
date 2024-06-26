@@ -14,7 +14,7 @@ void GettingComponentsLogic::Init() {
 	Unigine::Log::message("Caught: %s, ID: %d\n", _Node->getName(), _Node->getID());
 
 	//4. Get Custom Component from NodeItem
-	_Movement = getComponent<Movement>(NodeItem);
+	_Movement = getComponent<ChessMovement>(NodeItem);
 
 	//5. Get Unigine Component from the Node
 	Unigine::ObjectPtr Obj = Unigine::checked_ptr_cast<Unigine::Object>(NodeItem.get());
@@ -24,5 +24,5 @@ void GettingComponentsLogic::Init() {
 }
 
 void GettingComponentsLogic::Update() {
-	if (_Movement) _Movement->ChessMovement();
+	if (_Movement) _Movement->FixedCombined();
 }

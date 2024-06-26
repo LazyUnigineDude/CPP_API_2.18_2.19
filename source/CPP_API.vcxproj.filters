@@ -66,6 +66,12 @@
     <ClInclude Include="Movements\ChessMovement.h">
       <Filter>Movements</Filter>
     </ClInclude>
+    <ClInclude Include="Movements\ConstMovement.h">
+      <Filter>Movements</Filter>
+    </ClInclude>
+    <ClInclude Include="Movements\PhysicsMovement.h">
+      <Filter>Movements</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">

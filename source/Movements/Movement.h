@@ -1,30 +1,27 @@
 #pragma once
-#include <UnigineComponentSystem.h>
+#include "ChessMovement.h"
+#include "ConstMovement.h"
+#include "PhysicsMovement.h"
 
 struct Movement : public Unigine::ComponentBase {
 
 public:
-	COMPONENT_DEFINE(Movement, ComponentBase)
-		COMPONENT_INIT(Init)
-		COMPONENT_UPDATE(Update)
-		COMPONENT_UPDATE_PHYSICS(UpdatePhysics)
+	COMPONENT_DEFINE(Movement, ComponentBase);
+	COMPONENT_INIT(Init);
+	COMPONENT_UPDATE(Update);
+	COMPONENT_UPDATE_PHYSICS(UpdatePhysics);
 
-		//PROP_PARAM(Node, node)
-		//PROP_PARAM(Node, MoveObj2)
-
-		void ChessMovement();
-
+	PROP_PARAM(Node, ChessNode);
+	PROP_PARAM(Node, ConstNode);
+	PROP_PARAM(Node, PhysicNode);
+ 
 protected:
 	void Init(), Update(), UpdatePhysics();
 
 private:
-	void ChessRot(),  ChessCombined(), ChessFixedMovement(), ChessFixedCombined();
-	void ConstMovement(), ConstRot(), ConstCombined();
-
-	void PhysicsMovement(), PhysicsFixedMovement(), PhysicsRot(), PhysicsCombinedMovement();
-
-	Unigine::BodyRigidPtr _Physics;
-	float Speed = 10;
+	ChessMovement* Chess;
+	ConstMovement* Const;
+	PhysicsMovement* Physics;
 };
 
 inline double GetSpeed(Unigine::Math::vec3 Vel) {
