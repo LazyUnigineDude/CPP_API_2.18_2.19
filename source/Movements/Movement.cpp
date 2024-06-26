@@ -1,5 +1,7 @@
 #include "Movement.h"
+#include "ChessMovement.h"
 REGISTER_COMPONENT(Movement)
+REGISTER_COMPONENT(ChessMovement)
 
 void Movement::Init() {
 
@@ -34,7 +36,7 @@ void Movement::UpdatePhysics() {
 	//_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_Y) * Speed * Unigine::Physics::getIFps());
 }
 
-void Movement::ChessMovement() {
+void ChessMovement::Movement() {
 	
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_W)) {
 		node->setWorldPosition(node->getWorldPosition() + Unigine::Math::Vec3_forward);
@@ -59,7 +61,7 @@ void Movement::ChessMovement() {
 	}
 }
 
-void Movement::ChessRot() {
+void ChessMovement::Rot() {
 	
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_Q)) {
 		node->worldRotate(Unigine::Math::quat(0, 0, 15));
@@ -73,13 +75,13 @@ void Movement::ChessRot() {
 	}
 }
 
-void Movement::ChessCombined() {
+void ChessMovement::Combined() {
 
-	ChessMovement();
-	ChessRot();
+	Movement();
+	Rot();
 }
 
-void Movement::ChessFixedMovement() {
+void ChessMovement::FixedMove() {
 
 	Unigine::Math::Vec3 Pos;
 
@@ -110,10 +112,10 @@ void Movement::ChessFixedMovement() {
 	}
 }
 
-void Movement::ChessFixedCombined() {
+void ChessMovement::FixedCombine() {
 
-	ChessFixedMovement();
-	ChessRot();
+	FixedMove();
+	Rot();
 }
 
 ///////////////////////////////////////////////////////////////////

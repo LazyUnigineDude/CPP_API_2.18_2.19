@@ -1,5 +1,5 @@
 #pragma once
-#include <Unigine.h>
+#include <UnigineComponentSystem.h>
 
 struct Movement : public Unigine::ComponentBase {
 

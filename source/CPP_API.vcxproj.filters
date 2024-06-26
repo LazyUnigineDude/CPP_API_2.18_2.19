@@ -63,6 +63,9 @@
     <ClInclude Include="Intersections\Simple.h">
       <Filter>Intersections</Filter>
     </ClInclude>
+    <ClInclude Include="Movements\ChessMovement.h">
+      <Filter>Movements</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
