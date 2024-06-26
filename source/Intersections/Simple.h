@@ -38,8 +38,8 @@ protected:
 	void SetPoints(Unigine::Math::AXIS _Axis, int _Distance, Unigine::NodePtr Node) {
 
 		P0 = Node->getWorldPosition();
-		P1 = Node->getWorldPosition() +
-			Unigine::Math::Vec3(Node->getWorldDirection(_Axis) * _Distance);
+		P1 = Unigine::Math::Vec3(Node->getWorldDirection(_Axis) * _Distance);
+		P1 += P0;
 	}
 
 	Unigine::Math::Vec3 P0, P1,

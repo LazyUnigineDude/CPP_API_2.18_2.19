@@ -1,6 +1,7 @@
 #pragma once
 #include "Camera.h"
 #include <UnigineGame.h>
+using namespace Unigine;
 
 struct ScreenDetect : public CameraDetect {
 
