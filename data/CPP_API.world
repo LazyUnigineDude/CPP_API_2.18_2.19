@@ -818,9 +818,9 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>0</controlled>
-			<transform>0.764024972916 0.645186722279 -3.90112400055e-05 0.0 -0.370163619518 0.438394367695 0.819017231464 0.0 0.528436183929 -0.625735104084 0.573768913746 0.0 3.30442122104 -3.32021399907 3.79568253016 1.0</transform>
+			<transform>0.761797785759 0.647814869881 -4.52101230621e-05 0.0 -0.145855873823 0.171587184072 0.974312007427 0.0 0.63118159771 -0.742222130299 0.225202351809 0.0 4.84072881824 0.650646989845 3.55718922683 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="1702994992" immovable="1" name="material_ball">
+		<node type="ObjectMeshStatic" id="1702994992" enabled="0" immovable="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
@@ -832,7 +832,7 @@
 			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -2 1.19209289551e-07 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="807808027" name="Intersection Object">
+		<node type="ObjectMeshStatic" id="807808027" enabled="0" name="Intersection Object">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
@@ -843,6 +843,33 @@
 				<property parent="796efcb02bb9fb8f7b3ca50c6d2e0fdabc7eba98" guid="86b5fb1082a561d8b1ab65b23ebc2da2f05dbc9d"/>
 			</properties>
 			<transform>5.960463767e-08 -0.999999821186 0 0.0 0.999999821186 5.960463767e-08 0 0.0 0 0 0.999999880791 0.0 -1.98680666833 2.98673349268 1.19209289607e-07 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1622346182" immovable="1" name="Object">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://7786d0dd2d6c2fdae61b48c349a35de16edcd20c</mesh_name>
+			<surface name="Silver" intersection="1" material="71e1732449a1b3b5f65b565230c3e22220b1cc41"/>
+			<surface name="Black" intersection="1" material="107b95fcad5bfae76f2a0d6a6075e68e5ae20679"/>
+			<surface name="Blue" intersection="1" material="3fab63bc5f9cff8d45d1a52a0846e3224222cb39"/>
+			<transform>-0.998592376709 0.0530398339033 0 0.0 -0.0530398339033 -0.998592376709 0 0.0 0 0 0.999999880791 0.0 -0.0159668346947 9.87255184066 2.61360062344 1.0</transform>
+			<node type="PlayerDummy" id="856625877" name="Camera">
+				<znear>0.300000012</znear>
+				<zfar>100000</zfar>
+				<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+				<is_oblique_frustum>0</is_oblique_frustum>
+				<is_main>0</is_main>
+				<is_listener>1</is_listener>
+				<controlled>1</controlled>
+				<transform>0.999999820845 1.67587817235e-09 0 0.0 -1.11725211721e-09 0.999999880563 0 0.0 0 0 0.999999642372 0.0 1.20560628147e-09 2 -8.881784197e-16 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="997051610" name="Camera">
+			<properties>
+				<property parent="d3f3c87ae12e0223bb8fa4b0d0e099762d5aa89a" guid="3d2e70b9f7a3b88c2358673f72a85aa6e073bdf8">
+					<parameter name="CameraNode">856625877</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>
 	<console>

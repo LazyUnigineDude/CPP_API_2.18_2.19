@@ -11,14 +11,39 @@ public:
 	COMPONENT_UPDATE(Update);
 	COMPONENT_SHUTDOWN(Shutdown);
 	
-	PROP_PARAM(Mask, MaskVal, 0x02);
-
 protected:
+	PROP_PARAM(Mask, MaskVal, 0x02);
 	void Init(), Update(), Shutdown();
 
-private:
 	Unigine::WorldIntersectionPtr Ptr;
+	Unigine::WorldIntersectionNormalPtr NPtr;
 	Unigine::WidgetLabelPtr Label;
+	
+	void InitPtrs() {
+		Ptr = Unigine::WorldIntersection::create();
+		NPtr = Unigine::WorldIntersectionNormal::create();
+
+	}
+
+	void InitLabel() {
+
+		Label = Unigine::WidgetLabel::create();
+		Label->setFontSize(21);
+		Label->setFontOutline(2);
+
+		Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
+		GUI->addChild(Label, GUI->ALIGN_CENTER | GUI->ALIGN_OVERLAP);
+	}
+
+	void SetPoints(Unigine::Math::AXIS _Axis, int _Distance) {
+
+		P0 = node->getWorldPosition();
+		P1 = node->getWorldPosition() +
+			Unigine::Math::Vec3(node->getWorldDirection(_Axis) * _Distance);
+	}
+
 	Unigine::Math::Vec3 P0, P1;
-	int Distance = 10;
+
+private:
+	int Distance{ 10 };
 };

@@ -4,29 +4,30 @@ REGISTER_COMPONENT(SimpleDetect)
 void SimpleDetect::Init() { 
 	
 	Ptr = Unigine::WorldIntersection::create();
-	Label = Unigine::WidgetLabel::create();
-	Label->setFontSize(21);
-	Label->setFontOutline(2);
+	NPtr = Unigine::WorldIntersectionNormal::create();
+	SetPoints(Unigine::Math::AXIS_Y, Distance);
 
-	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
-	GUI->addChild(Label, GUI->ALIGN_CENTER | GUI->ALIGN_OVERLAP);
-
-	P0 = node->getWorldPosition();
-	P1 = node->getWorldPosition() + 
-		Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_Y) * Distance);
-
+	// Offset cause CenterPoint is on Floor
 	P0 += Unigine::Math::Vec3(0, 0, 0.5);
 	P1 += Unigine::Math::Vec3(0, 0, 0.5);
+
+	InitLabel();
 }
 
 void SimpleDetect::Update() {
 		
 
-	Unigine::ObjectPtr Obj = Unigine::World::getIntersection(P0, P1, MaskVal, Ptr);
+	Unigine::ObjectPtr Obj = Unigine::World::getIntersection(P0, P1, MaskVal,/* Ptr*/ NPtr);
 
 	if (Obj) { 
 		Label->setText(Obj->getName()); 
 		Label->setFontColor(Unigine::Math::vec4_green);
+
+		//// For Point Only
+		//Unigine::Visualizer::renderPoint3D(Ptr->getPoint(), 0.05f, Unigine::Math::vec4_green);
+
+		// For Normal
+		Unigine::Visualizer::renderVector(NPtr->getPoint(), NPtr->getPoint() + Unigine::Math::Vec3(NPtr->getNormal()), Unigine::Math::vec4_green);
 	}
 	else { 
 		Label->setText("Caught Nothing");
@@ -44,6 +45,7 @@ void SimpleDetect::Update() {
 void SimpleDetect::Shutdown() {
 
 	if (Ptr) Ptr.deleteLater();
+	if (NPtr) NPtr.deleteLater();
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	if (GUI->isChild(Label))  GUI->removeChild(Label); 
