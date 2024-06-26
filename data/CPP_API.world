@@ -817,17 +817,32 @@
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>0.279319822788 0.960198104382 -3.79383563995e-05 0.0 -0.534326732159 0.155467510223 0.830857813358 0.0 0.797793984413 -0.232054769993 0.556484758854 0.0 4.08749532852 -3.19905512187 3.4955838669 1.0</transform>
+			<controlled>0</controlled>
+			<transform>0.764024972916 0.645186722279 -3.90112400055e-05 0.0 -0.370163619518 0.438394367695 0.819017231464 0.0 0.528436183929 -0.625735104084 0.573768913746 0.0 3.30442122104 -3.32021399907 3.79568253016 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="1702994992" name="material_ball">
+		<node type="ObjectMeshStatic" id="1702994992" immovable="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
 			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
 			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
 			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<properties>
+				<property parent="bce32cc536bc45d19c24268f355899d640cd3c8b" guid="3f8abada3f4cd127cdd9c20c8a8332373037cf4f"/>
+			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 -2 1.19209289551e-07 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="807808027" name="Intersection Object">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" intersection_mask="0x2" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" intersection_mask="0x2" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" intersection_mask="0x2" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<properties>
+				<property parent="796efcb02bb9fb8f7b3ca50c6d2e0fdabc7eba98" guid="86b5fb1082a561d8b1ab65b23ebc2da2f05dbc9d"/>
+			</properties>
+			<transform>5.960463767e-08 -0.999999821186 0 0.0 0.999999821186 5.960463767e-08 0 0.0 0 0 0.999999880791 0.0 -1.98680666833 2.98673349268 1.19209289607e-07 1.0</transform>
 		</node>
 	</editor>
 	<console>

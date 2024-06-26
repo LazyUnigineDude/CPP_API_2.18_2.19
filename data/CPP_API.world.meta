@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.18.0.1">
-	<guid>0d374be9965f4fb4bd126737c16eb1f89588cf66</guid>
+	<guid>73ada763b68d51e3d64290d9267aca2cf9d4e57a</guid>
 	<type>world</type>
-	<hash>521cdda9</hash>
+	<hash>b93c4729</hash>
 	<runtimes>
-		<runtime id="0d374be9965f4fb4bd126737c16eb1f89588cf66" name="CPP_API.world" link="0"/>
+		<runtime id="73ada763b68d51e3d64290d9267aca2cf9d4e57a" name="CPP_API.world" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="string" name="physics_settings_path"/>

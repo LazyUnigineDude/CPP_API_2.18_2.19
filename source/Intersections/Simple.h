@@ -1,6 +1,7 @@
 #pragma once
 #include <UnigineWorld.h>
 #include <UnigineComponentSystem.h>
+#include <UnigineVisualizer.h>
 
 struct SimpleDetect : public Unigine::ComponentBase {
 
@@ -17,4 +18,7 @@ protected:
 
 private:
 	Unigine::WorldIntersectionPtr Ptr;
+	Unigine::WidgetLabelPtr Label;
+	Unigine::Math::Vec3 P0, P1;
+	int Distance = 10;
 };

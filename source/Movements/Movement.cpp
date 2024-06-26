@@ -1,14 +1,14 @@
 #include "Movement.h"
-REGISTER_COMPONENT(Movement)
 REGISTER_COMPONENT(ChessMovement)
 REGISTER_COMPONENT(ConstMovement)
 REGISTER_COMPONENT(PhysicsMovement)
+REGISTER_COMPONENT(Movement)
 
 void Movement::Init() {
 
-	Chess = getComponent<ChessMovement>(ChessNode);
-	Const = getComponent<ConstMovement>(ConstNode);
-	Physics = getComponent<PhysicsMovement>(PhysicNode);
+	if (ChessNode) Chess = getComponent<ChessMovement>(ChessNode);
+	if (ConstNode) Const = getComponent<ConstMovement>(ConstNode);
+	if (PhysicNode) Physics = getComponent<PhysicsMovement>(PhysicNode);
 
 	if(Physics) Physics->Init();
 }
