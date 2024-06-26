@@ -3,9 +3,8 @@ REGISTER_COMPONENT(SimpleDetect)
 
 void SimpleDetect::Init() { 
 	
-	Ptr = Unigine::WorldIntersection::create();
-	NPtr = Unigine::WorldIntersectionNormal::create();
-	SetPoints(Unigine::Math::AXIS_Y, Distance);
+	InitPtrs();
+	SetPoints(Unigine::Math::AXIS_Y, Distance, node);
 
 	// Offset cause CenterPoint is on Floor
 	P0 += Unigine::Math::Vec3(0, 0, 0.5);

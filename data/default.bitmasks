@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bit_mask_names>
 	<intersection>
+		<name index="0">Ground</name>
 		<name index="1">Sample Detection</name>
 	</intersection>
 </bit_mask_names>

@@ -35,15 +35,14 @@ protected:
 		GUI->addChild(Label, GUI->ALIGN_CENTER | GUI->ALIGN_OVERLAP);
 	}
 
-	void SetPoints(Unigine::Math::AXIS _Axis, int _Distance) {
+	void SetPoints(Unigine::Math::AXIS _Axis, int _Distance, Unigine::NodePtr Node) {
 
-		P0 = node->getWorldPosition();
-		P1 = node->getWorldPosition() +
-			Unigine::Math::Vec3(node->getWorldDirection(_Axis) * _Distance);
+		P0 = Node->getWorldPosition();
+		P1 = Node->getWorldPosition() +
+			Unigine::Math::Vec3(Node->getWorldDirection(_Axis) * _Distance);
 	}
 
-	Unigine::Math::Vec3 P0, P1;
-
-private:
+	Unigine::Math::Vec3 P0, P1,
+		Offset{ 0, 0, 0.5 };
 	int Distance{ 10 };
 };

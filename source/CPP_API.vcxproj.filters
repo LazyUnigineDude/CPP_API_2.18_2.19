@@ -37,6 +37,9 @@
     <ClCompile Include="Intersections\Camera.cpp">
       <Filter>Intersections</Filter>
     </ClCompile>
+    <ClCompile Include="Intersections\Screen.cpp">
+      <Filter>Intersections</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -76,6 +79,9 @@
       <Filter>Movements</Filter>
     </ClInclude>
     <ClInclude Include="Intersections\Camera.h">
+      <Filter>Intersections</Filter>
+    </ClInclude>
+    <ClInclude Include="Intersections\Screen.h">
       <Filter>Intersections</Filter>
     </ClInclude>
   </ItemGroup>
