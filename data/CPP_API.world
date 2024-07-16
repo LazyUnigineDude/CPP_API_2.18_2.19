@@ -817,11 +817,34 @@
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>1 -3.5762787e-07 0 0.0 0 0 1 0.0 -3.5762787e-07 -1 0 0.0 0 0 1.5 1.0</transform>
+			<controlled>0</controlled>
+			<transform>0.813103616238 0.582118988037 -1.22189521785e-06 0.0 -0.251526653767 0.351334273815 0.901830673218 0.0 0.524973154068 -0.733281493187 0.432089596987 0.0 3.66249570944 -3.73269774199 4.50132719781 1.0</transform>
 		</node>
-		<node type="NodeReference" id="829348209" name="material_ball">
-			<reference>guid://195f9699e605114087e7c79e9555b4cdeae10f48</reference>
+		<node type="ObjectMeshStatic" id="1675620666" name="material_ball">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://d66c38d3cb2ce8161c55807d4a2d47b80c46e7b7</mesh_name>
+			<surface name="material_ball_mat_lod_0" intersection="1" max_visible_distance="3" max_fade_distance="0.5" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_1" intersection="1" min_visible_distance="3" max_visible_distance="9" min_fade_distance="0.5" max_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<surface name="material_ball_mat_lod_2" intersection="1" min_visible_distance="9" min_fade_distance="1" physics_friction="1" physics_restitution="1" material="2d2814767f25015d91f013182a937b973ae9640a"/>
+			<properties>
+				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="cb4cc9b1c9a9ec197815c5107227cbd54df90aa2">
+					<parameter name="ConstNode">1675620666</parameter>
+				</property>
+				<property parent="796efcb02bb9fb8f7b3ca50c6d2e0fdabc7eba98" guid="ccc99c4b7579d69e56a008c2d311d83521fa6624"/>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="450273671" name="WorldTrigger">
+			<size>2 2 2</size>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 4 1 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1950849373" name="WT">
+			<properties>
+				<property parent="d3f06a581b2b66fa7a3965ddeb6fb307f7be20ba" guid="46cb5169eb0ab29137082f7e9f44fdeeb45c7b33">
+					<parameter name="WTNode">450273671</parameter>
+				</property>
+			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>

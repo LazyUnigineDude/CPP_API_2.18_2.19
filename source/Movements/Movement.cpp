@@ -121,27 +121,27 @@ void ConstMovement::Movement() {
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_W)) {
 		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_Y));
 		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
-		Unigine::Log::message("Pressed W, Forward\n");
+		//Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_S)) {
 		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NY));
 		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
-		Unigine::Log::message("Pressed S, Backward\n");
+		//Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_A)) {
 		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NX));
 		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
-		Unigine::Log::message("Pressed A, Left\n");
+		//Unigine::Log::message("Pressed A, Left\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_D)) {
 		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_X));
 		node->setWorldPosition(node->getWorldPosition() + (Pos * Unigine::Game::getIFps()));
-		Unigine::Log::message("Pressed D, Right\n");
+		//Unigine::Log::message("Pressed D, Right\n");
 	}
 }
 
@@ -149,13 +149,13 @@ void ConstMovement::Rot() {
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_Q)) {
 		node->worldRotate(Unigine::Math::quat(0, 0, 1));
-		Unigine::Log::message("Pressed Q, CounterClockwise Rotation\n");
+		//Unigine::Log::message("Pressed Q, CounterClockwise Rotation\n");
 	}
 
 
 	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_E)) {
 		node->worldRotate(Unigine::Math::quat(0, 0, -1));
-		Unigine::Log::message("Pressed E, ClockWise Rotation\n");
+		//Unigine::Log::message("Pressed E, ClockWise Rotation\n");
 	}
 }
 

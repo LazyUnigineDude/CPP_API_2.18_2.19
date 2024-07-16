@@ -40,6 +40,9 @@
     <ClCompile Include="Intersections\Screen.cpp">
       <Filter>Intersections</Filter>
     </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>Event Trigger</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -84,6 +87,9 @@
     <ClInclude Include="Intersections\Screen.h">
       <Filter>Intersections</Filter>
     </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>Event Trigger</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
@@ -100,6 +106,9 @@
     </Filter>
     <Filter Include="Intersections">
       <UniqueIdentifier>{b1e4bf76-85bb-47af-873d-e913247e5c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event Trigger">
+      <UniqueIdentifier>{2204c228-4c8b-4e09-be8d-107e7cc29d22}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

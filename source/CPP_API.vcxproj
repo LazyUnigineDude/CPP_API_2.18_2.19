@@ -83,6 +83,7 @@
     <ClCompile Include="Intersections\Simple.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Movements\Movement.cpp" />
+    <ClCompile Include="Trigger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h" />
@@ -99,6 +100,7 @@
     <ClInclude Include="Movements\ConstMovement.h" />
     <ClInclude Include="Movements\Movement.h" />
     <ClInclude Include="Movements\PhysicsMovement.h" />
+    <ClInclude Include="Trigger.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />
