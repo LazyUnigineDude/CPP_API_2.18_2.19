@@ -10,12 +10,12 @@ void Movement::Init() {
 	if (ConstNode) Const = getComponent<ConstMovement>(ConstNode);
 	if (PhysicNode) Physics = getComponent<PhysicsMovement>(PhysicNode);
 
-	if(Physics) Physics->Init();
+	//if(Physics) Physics->Init();
 }
 
 void Movement::Update() {
 	
-	if (Chess) Chess->FixedCombined();
+	//if (Chess) Chess->FixedCombined();
 	if (Const) Const->Combined();
 
 	//// Test
@@ -25,7 +25,7 @@ void Movement::Update() {
 
 void Movement::UpdatePhysics() {
 	
-	if (Physics) Physics->Combined();
+	//if (Physics) Physics->Combined();
 
 	//// Test
 	//_Physics->addLinearImpulse(node->getWorldDirection(Unigine::Math::AXIS_Y) * Speed * Unigine::Physics::getIFps());

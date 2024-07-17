@@ -40,7 +40,7 @@
     <ClCompile Include="Intersections\Screen.cpp">
       <Filter>Intersections</Filter>
     </ClCompile>
-    <ClCompile Include="Trigger.cpp">
+    <ClCompile Include="TriggerExample.cpp">
       <Filter>Event Trigger</Filter>
     </ClCompile>
   </ItemGroup>
@@ -87,7 +87,7 @@
     <ClInclude Include="Intersections\Screen.h">
       <Filter>Intersections</Filter>
     </ClInclude>
-    <ClInclude Include="Trigger.h">
+    <ClInclude Include="TriggerExample.h">
       <Filter>Event Trigger</Filter>
     </ClInclude>
   </ItemGroup>
