@@ -21,7 +21,7 @@ private:
 	Unigine::NodeTriggerPtr _NT;
 	Unigine::PhysicalTriggerPtr _PT;
 	Unigine::WorldTriggerPtr _WT;
-	Unigine::EventConnections EC, LC;
+	Unigine::EventConnection EC, LC;
 
 	void Move(const Unigine::NodeTriggerPtr& Obj);
 	Unigine::WidgetLabelPtr Label;

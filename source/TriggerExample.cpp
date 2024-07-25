@@ -12,7 +12,6 @@ static void Leave(const Unigine::NodePtr& Obj) {
 
 void TriggerExample::Move(const Unigine::NodeTriggerPtr& Obj) {
 	
-	
 	if (Label) Label->setText(Unigine::String::format("%.2f %.2f", Obj->getWorldPosition().x, Obj->getWorldPosition().y));
 }
 
@@ -58,8 +57,8 @@ void TriggerExample::Update() {
 	if (_PT) _PT->renderVisualizer();
 	if (_WT) _WT->renderVisualizer();
 
-	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_U)) { EC.disconnectAll(); }
-	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_I)) { LC.disconnectAll(); }
+	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_U)) { (EC.isEnabled()) ? EC.setEnabled(0) : EC.setEnabled(1); }
+	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_I)) { (LC.isEnabled()) ? LC.setEnabled(0) : LC.setEnabled(1); }
 }
 
 void TriggerExample::Shutdown() {
