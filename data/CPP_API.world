@@ -855,6 +855,12 @@
 			<size>2 2 2</size>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 4 1 1.0</transform>
 		</node>
+		<node type="PhysicalTrigger" id="204084575" name="PhysicalTrigger">
+			<type>3</type>
+			<size>2 2 2</size>
+			<exclusion_mask>0x0</exclusion_mask>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 3 4 1 1.0</transform>
+		</node>
 		<node type="NodeDummy" id="2057003493" name="Dummy">
 			<properties>
 				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="402bdec516373b912862bb82f87f772eef60df8d">
@@ -862,12 +868,6 @@
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
-		</node>
-		<node type="PhysicalTrigger" id="204084575" name="PhysicalTrigger">
-			<type>3</type>
-			<size>2 2 2</size>
-			<exclusion_mask>0x0</exclusion_mask>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 3 4 1 1.0</transform>
 		</node>
 	</editor>
 	<console>

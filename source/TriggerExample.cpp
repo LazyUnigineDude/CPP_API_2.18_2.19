@@ -57,8 +57,8 @@ void TriggerExample::Update() {
 	if (_PT) _PT->renderVisualizer();
 	if (_WT) _WT->renderVisualizer();
 
-	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_U)) { (EC.isEnabled()) ? EC.setEnabled(0) : EC.setEnabled(1); }
-	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_I)) { (LC.isEnabled()) ? LC.setEnabled(0) : LC.setEnabled(1); }
+	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_U)) { Unigine::Log::message("Enter Event Changed\n"); (EC.isEnabled()) ? EC.setEnabled(0) : EC.setEnabled(1); }
+	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_I)) { Unigine::Log::message("Leave Event Changed\n"); (LC.isEnabled()) ? LC.setEnabled(0) : LC.setEnabled(1); }
 }
 
 void TriggerExample::Shutdown() {
