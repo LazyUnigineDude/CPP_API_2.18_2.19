@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.18.0.1">
+	<guid>81f11e0122c5e9ebe5154c31a94bf3611619782a</guid>
+	<type>world</type>
+	<hash>a038a6f3</hash>
+	<runtimes>
+		<runtime id="81f11e0122c5e9ebe5154c31a94bf3611619782a" name="CPP_Triggers.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="script_name"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="viewports_settings"/>
+	</parameters>
+</asset>

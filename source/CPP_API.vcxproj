@@ -78,12 +78,13 @@
     <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
     <ClCompile Include="Coroutines\DayNightCycle.cpp" />
     <ClCompile Include="Coroutines\TimeController.cpp" />
+    <ClCompile Include="GUI\Widgets.cpp" />
     <ClCompile Include="Intersections\Camera.cpp" />
     <ClCompile Include="Intersections\Screen.cpp" />
     <ClCompile Include="Intersections\Simple.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Movements\Movement.cpp" />
-    <ClCompile Include="TriggerExample.cpp" />
+    <ClCompile Include="Triggers\TriggerExample.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h" />
@@ -93,6 +94,7 @@
     <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
     <ClInclude Include="Coroutines\DayNightCycle.h" />
     <ClInclude Include="Coroutines\TimeController.h" />
+    <ClInclude Include="GUI\Widgets.h" />
     <ClInclude Include="Intersections\Camera.h" />
     <ClInclude Include="Intersections\Screen.h" />
     <ClInclude Include="Intersections\Simple.h" />
@@ -100,7 +102,7 @@
     <ClInclude Include="Movements\ConstMovement.h" />
     <ClInclude Include="Movements\Movement.h" />
     <ClInclude Include="Movements\PhysicsMovement.h" />
-    <ClInclude Include="TriggerExample.h" />
+    <ClInclude Include="Triggers\TriggerExample.h" />
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="../utils/natvis/unigine_stl.natvis" />

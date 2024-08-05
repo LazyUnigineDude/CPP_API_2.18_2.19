@@ -832,6 +832,41 @@
 					<size>0.869216025 0.855077147 1.00260282</size>
 				</shape>
 			</body>
+			<properties>
+				<property parent="796efcb02bb9fb8f7b3ca50c6d2e0fdabc7eba98" guid="ccc99c4b7579d69e56a008c2d311d83521fa6624"/>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			<node type="NodeTrigger" id="1857104384" name="NodeTrigger">
+				<transform>0.999999940396 0 0 0.0 0 0.999999940396 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1950849373" name="Triggers">
+			<properties>
+				<property parent="ad8b2ce6dc54b23fa1f3dc55f3647b2ce8a66c8c" guid="b47e7adfd38a31e25eb9850e300658df299a8f66">
+					<parameter name="WTNode">450273671</parameter>
+					<parameter name="NTNode">1857104384</parameter>
+					<parameter name="PTNode">204084575</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="450273671" name="WorldTrigger">
+			<touch>1</touch>
+			<size>2 2 2</size>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 4 1 1.0</transform>
+		</node>
+		<node type="PhysicalTrigger" id="204084575" name="PhysicalTrigger">
+			<type>3</type>
+			<size>2 2 2</size>
+			<exclusion_mask>0x0</exclusion_mask>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 3 4 1 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2057003493" name="Dummy">
+			<properties>
+				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="402bdec516373b912862bb82f87f772eef60df8d">
+					<parameter name="ConstNode">1675620666</parameter>
+				</property>
+			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>

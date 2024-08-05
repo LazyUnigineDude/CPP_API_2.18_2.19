@@ -40,8 +40,11 @@
     <ClCompile Include="Intersections\Screen.cpp">
       <Filter>Intersections</Filter>
     </ClCompile>
-    <ClCompile Include="TriggerExample.cpp">
+    <ClCompile Include="Triggers\TriggerExample.cpp">
       <Filter>Event Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Widgets.cpp">
+      <Filter>GUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -87,7 +90,10 @@
     <ClInclude Include="Intersections\Screen.h">
       <Filter>Intersections</Filter>
     </ClInclude>
-    <ClInclude Include="TriggerExample.h">
+    <ClInclude Include="GUI\Widgets.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Triggers\TriggerExample.h">
       <Filter>Event Trigger</Filter>
     </ClInclude>
   </ItemGroup>
@@ -109,6 +115,9 @@
     </Filter>
     <Filter Include="Event Trigger">
       <UniqueIdentifier>{2204c228-4c8b-4e09-be8d-107e7cc29d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{37c051a9-88c5-468a-a5bc-5de38bd65614}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
