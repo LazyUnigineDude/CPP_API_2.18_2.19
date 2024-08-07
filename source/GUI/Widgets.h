@@ -13,5 +13,5 @@ protected:
 	void Init(), Shutdown();
 
 private:
-
+	Unigine::WidgetButtonPtr Button;
 };
