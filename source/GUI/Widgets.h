@@ -25,8 +25,11 @@ private:
 		Button->setButtonColor(Unigine::Math::vec4_black);
 	}
 
-	Unigine::EventConnection EC;
+	void Changed(const Unigine::WidgetPtr& Widget) { Unigine::Log::message("Value Changed: %d\n", Slider->getValue()); }
+
 	Unigine::WidgetButtonPtr Button;
+	Unigine::WidgetSliderPtr Slider;
+	Unigine::WidgetCanvasPtr Canvas;
 };
 
 void Clicked(const Unigine::WidgetPtr& Widget) {

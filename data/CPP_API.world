@@ -837,13 +837,13 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="264567455" enabled="0" name="Widgets">
+		<node type="NodeDummy" id="264567455" name="Widgets">
 			<properties>
 				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f"/>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="1493359004" name="ChessGUI">
+		<node type="NodeDummy" id="1493359004" enabled="0" name="ChessGUI">
 			<properties>
 				<property parent="a12a812facb8df1b3cf179df7053a5e09f362713" guid="8614ec11ace64cc24422db832f9a32954e5f05bd">
 					<parameter name="ChessNode">1675620666</parameter>
