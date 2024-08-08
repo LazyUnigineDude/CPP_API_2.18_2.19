@@ -5,20 +5,20 @@ void Widgets::Init() {
 
 	Button = Unigine::WidgetButton::create("Click Me");
 	Button->setWidth(50);
-	Button->setPosition(400, 400);
 	Button->setFontSize(21);
+	Button->setPosition(400, 400);
 	Button->setFontColor(Unigine::Math::vec4_red);
 	Button->setButtonColor(Unigine::Math::vec4_black);
 	Button->setOrder(1);
 
+	Button->getEventClicked().connect(&Clicked);
 	Button->getEventEnter().connect(this, &Widgets::Enter);
 	Button->getEventLeave().connect(this, &Widgets::Leave);
-	Button->getEventClicked().connect(&Clicked);
 
 	Slider = Unigine::WidgetSlider::create(0, 100, 50);
-	Slider->setButtonColor(Unigine::Math::vec4_blue);
 	Slider->setOrientation(0);
 	Slider->setPosition(200, 250);
+	Slider->setButtonColor(Unigine::Math::vec4_blue);
 	Slider->getEventChanged().connect(this, &Widgets::Changed);
 
 	Canvas = Unigine::WidgetCanvas::create();
