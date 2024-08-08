@@ -832,6 +832,15 @@
 					<size>0.869216025 0.855077147 1.00260282</size>
 				</shape>
 			</body>
+			<properties>
+				<property parent="264fcbef3eb98380fcad354b853a17a39f50d5ff" guid="c8267cd005843a933bdcc9f6e37e6f8179c45002"/>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="264567455" name="Widgets">
+			<properties>
+				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f"/>
+			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>
