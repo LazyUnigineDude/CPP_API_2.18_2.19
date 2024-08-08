@@ -818,7 +818,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>0</controlled>
-			<transform>0.813103616238 0.582118988037 -1.22189521785e-06 0.0 -0.251526653767 0.351334273815 0.901830673218 0.0 0.524973154068 -0.733281493187 0.432089596987 0.0 3.66249570944 -3.73269774199 4.50132719781 1.0</transform>
+			<transform>0.920502662659 -0.390736252069 -3.87430191017e-07 0.0 0.253249138594 0.596607625484 0.7615275383 0.0 -0.297556191683 -0.700988173485 0.648132503033 0.0 -2.43516675557 -3.93568714183 4.35110986949 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1675620666" trigger_interaction_enabled="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -837,11 +837,19 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="264567455" name="Widgets">
+		<node type="NodeDummy" id="264567455" enabled="0" name="Widgets">
 			<properties>
 				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f"/>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1493359004" name="ChessGUI">
+			<properties>
+				<property parent="a12a812facb8df1b3cf179df7053a5e09f362713" guid="8614ec11ace64cc24422db832f9a32954e5f05bd">
+					<parameter name="ChessNode">1675620666</parameter>
+				</property>
+			</properties>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.66249465949 -3.73269627543 4.50132633363 1.0</transform>
 		</node>
 	</editor>
 	<console>

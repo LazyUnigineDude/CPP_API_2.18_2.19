@@ -46,6 +46,9 @@
     <ClCompile Include="GUI\Widgets.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
+    <ClCompile Include="GUI\ChessGUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -95,6 +98,9 @@
     </ClInclude>
     <ClInclude Include="Triggers\TriggerExample.h">
       <Filter>Event Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\ChessGUI.h">
+      <Filter>GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

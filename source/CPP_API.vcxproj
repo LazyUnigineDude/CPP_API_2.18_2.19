@@ -78,6 +78,7 @@
     <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
     <ClCompile Include="Coroutines\DayNightCycle.cpp" />
     <ClCompile Include="Coroutines\TimeController.cpp" />
+    <ClCompile Include="GUI\ChessGUI.cpp" />
     <ClCompile Include="GUI\Widgets.cpp" />
     <ClCompile Include="Intersections\Camera.cpp" />
     <ClCompile Include="Intersections\Screen.cpp" />
@@ -94,6 +95,7 @@
     <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
     <ClInclude Include="Coroutines\DayNightCycle.h" />
     <ClInclude Include="Coroutines\TimeController.h" />
+    <ClInclude Include="GUI\ChessGUI.h" />
     <ClInclude Include="GUI\Widgets.h" />
     <ClInclude Include="Intersections\Camera.h" />
     <ClInclude Include="Intersections\Screen.h" />

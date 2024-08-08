@@ -59,13 +59,13 @@ void ChessMovement::Movement() {
 void ChessMovement::Rot() {
 	
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_Q)) {
-		node->worldRotate(Unigine::Math::quat(0, 0, 15));
+		RotLeft();
 		Unigine::Log::message("Pressed Q, CounterClockwise Rotation by 15\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_E)) {
-		node->worldRotate(Unigine::Math::quat(0, 0, -15));
+		RotRight();
 		Unigine::Log::message("Pressed E, ClockWise Rotation by 15\n");
 	}
 }
@@ -78,31 +78,27 @@ void ChessMovement::Combined() {
 
 void ChessMovement::FixedMove() {
 
-	Unigine::Math::Vec3 Pos;
+
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_W)) {
-		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_Y));
-		node->setWorldPosition(node->getWorldPosition() + Pos);
+		MoveUp();
 		Unigine::Log::message("Pressed W, Forward\n");
 	}
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_S)) {
-		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NY));
-		node->setWorldPosition(node->getWorldPosition() + Pos);
+		MoveDown();
 		Unigine::Log::message("Pressed S, Backward\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_A)) {
-		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_NX));
-		node->setWorldPosition(node->getWorldPosition() + Pos);
+		MoveLeft();
 		Unigine::Log::message("Pressed A, Left\n");
 	}
 
 
 	if (Unigine::Input::isKeyDown(Unigine::Input::KEY_D)) {
-		Pos = Unigine::Math::Vec3(node->getWorldDirection(Unigine::Math::AXIS_X));
-		node->setWorldPosition(node->getWorldPosition() + Pos);
+		MoveRight();
 		Unigine::Log::message("Pressed D, Right\n");
 	}
 }
