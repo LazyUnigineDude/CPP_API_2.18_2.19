@@ -1862,7 +1862,7 @@
 	"ad8b2ce6dc54b23fa1f3dc55f3647b2ce8a66c8c": "ComponentSystem/TriggerExample.prop",
 	"d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa": "core/properties/surface_base.prop",
 	"1c613bbca0afd78c1ef165fc8e419352c5903d9e": "core/properties/node_base.prop",
-	"de44f187c7c432f368d87429a468c6438ac19c13": "ComponentSystem/ChessGUI.prop",
+	"a12a812facb8df1b3cf179df7053a5e09f362713": "ComponentSystem/ChessGUI.prop",
 	"d5be6c54f8ee37cae4ea2bd549504527c6e0abff": "ComponentSystem/ComponentCheck.prop",
 	"4c1b04333e27657cf305293ac4ca3e352c526438": "ComponentSystem/DerivedComponentCheck.prop",
 	"a2994dd48ba9f2da90b4fbdae3918b061e60105f": "ComponentSystem/TimeController.prop",

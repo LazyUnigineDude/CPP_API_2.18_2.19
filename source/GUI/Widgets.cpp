@@ -26,9 +26,9 @@ void Widgets::Init() {
 
 	int Square = Canvas->addPolygon(0);
 	Canvas->setPolygonColor(Square, Unigine::Math::vec4_green);
-	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0, 200, 0));
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0,   0, 0));
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3( 200,   0, 0));
+	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0, 200, 0));
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3( 200, 200, 0));
 
 	int Line = Canvas->addLine(1);
@@ -44,8 +44,8 @@ void Widgets::Init() {
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	GUI->addChild(Button, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
-	GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
-	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	//GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	//GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 }
 
 void Widgets::Shutdown() {
