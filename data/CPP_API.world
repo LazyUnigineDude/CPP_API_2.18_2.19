@@ -839,7 +839,13 @@
 		</node>
 		<node type="NodeDummy" id="264567455" name="Widgets">
 			<properties>
-				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f"/>
+				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f">
+					<parameter name="ImageFile">
+						<value index="0">guid://d76e4260367523a2ca802bbeedeb98481271b616</value>
+						<value index="1">guid://d6c4098b453eae27ed0317f57ef83ef7952ebed3</value>
+						<value index="2">guid://43dc8e6d0f1a740baa73e5a73975827be8bf9035</value>
+					</parameter>
+				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>

@@ -15,12 +15,6 @@ void Widgets::Init() {
 	Button->getEventEnter().connect(this, &Widgets::Enter);
 	Button->getEventLeave().connect(this, &Widgets::Leave);
 
-	Slider = Unigine::WidgetSlider::create(0, 100, 50);
-	Slider->setOrientation(0);
-	Slider->setPosition(200, 250);
-	Slider->setButtonColor(Unigine::Math::vec4_blue);
-	Slider->getEventChanged().connect(this, &Widgets::Changed);
-
 	Canvas = Unigine::WidgetCanvas::create();
 	Canvas->setPosition(400, 400);
 
@@ -42,20 +36,61 @@ void Widgets::Init() {
 	Canvas->setTextColor(Text, Unigine::Math::vec4_blue);
 	Canvas->setTextPosition(Text, Unigine::Math::vec2(100, 100));
 
+	Sprite = Unigine::WidgetSprite::create();
+	for (int i = 0; i < ImageFile.size(); i++)
+	{
+		int x = Sprite->addLayer();
+		Sprite->setLayerTexture(x, ImageFile[i]);
+
+		Unigine::Math::mat4 mat = Sprite->getLayerTransform(x);
+		mat.setTranslate(Unigine::Math::vec3(-hSize, -hSize, 0));
+		Sprite->setLayerTransform(x, mat);
+	}
+	Sprite->setPosition(500, 150);
+
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	GUI->addChild(Button, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
-	//GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
-	//GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	GUI->addChild(Sprite, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+}
+
+void Widgets::Update() {
+
+	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_U)) { 
+		Angle = Unigine::Math::clamp(Angle - Unigine::Game::getIFps() * 36, 0.0f, 250.0f);
+		RotateImage();
+	}
+	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_I)) {
+		Angle = Unigine::Math::clamp(Angle + Unigine::Game::getIFps() * 36, 0.0f, 250.0f);
+		RotateImage();
+	}
 }
 
 void Widgets::Shutdown() {
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	if (GUI->isChild(Button)) GUI->removeChild(Button);
-	if (GUI->isChild(Slider)) GUI->removeChild(Slider);
 	if (GUI->isChild(Canvas)) GUI->removeChild(Canvas);
+	if (GUI->isChild(Sprite)) GUI->removeChild(Sprite);
 
 	if (Button) Button.deleteLater();
-	if (Slider) Slider.deleteLater();
 	if (Canvas) Canvas.deleteLater();
+	if (Sprite) Sprite.deleteLater();
+}
+
+void Widgets::RotateImage() {
+	
+	// cos0 - sin0
+	// cos0 + sin0
+	// 0
+
+	Unigine::Math::vec3 Piv{
+		(Unigine::Math::cos(Angle * Unigine::Math::Consts::DEG2RAD) * -hSize) - (Unigine::Math::sin(Angle * Unigine::Math::Consts::DEG2RAD) * -hSize),
+		(Unigine::Math::cos(Angle * Unigine::Math::Consts::DEG2RAD) * -hSize) + (Unigine::Math::sin(Angle * Unigine::Math::Consts::DEG2RAD) * -hSize),
+		0
+	};
+
+	Unigine::Math::quat Rot{ 0.0f,0.0f, Angle };
+	Unigine::Math::mat4 Mat{ Rot, Piv };
+	Sprite->setLayerTransform(ImageFile.size(), Mat);
 }
