@@ -61,10 +61,9 @@ void Widgets::Init() {
 	Video->play();
 
 	// Add Sound with Video
-	Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
-	Sound->setSampleName(VideoFile);
-	Sound->play();
-	Video->setSoundSource(Sound);
+	//Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
+	//Sound->play();
+	//Video->setSoundSource(Sound);
 
 	// Add Video to Object in World
 	Unigine::GuiPtr VGUIP = VGui->getGui();

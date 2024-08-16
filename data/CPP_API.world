@@ -845,7 +845,7 @@
 						<value index="1">guid://d6c4098b453eae27ed0317f57ef83ef7952ebed3</value>
 						<value index="2">guid://43dc8e6d0f1a740baa73e5a73975827be8bf9035</value>
 					</parameter>
-					<parameter name="VideoFile">guid://4a768f1dc76892375d5c25d70c108ea41f2a2ee5</parameter>
+					<parameter name="VideoFile">guid://4b323cbbda24724e2d304ea54fa4b4ea6d634c03</parameter>
 					<parameter name="GUINode">1378512173</parameter>
 					<parameter name="SoundNode">834035176</parameter>
 				</property>
@@ -870,8 +870,8 @@
 				<gui_name>core/gui/</gui_name>
 				<billboard>0</billboard>
 				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
+				<depth_test>0</depth_test>
+				<mouse_show>0</mouse_show>
 				<control_distance>2</control_distance>
 				<polygon_offset>1</polygon_offset>
 				<physical_width>3.0999999</physical_width>
@@ -882,11 +882,11 @@
 				<transform>-0.999999046326 0 3.25841085669e-07 0.0 3.25841028825e-07 5.96045808265e-08 0.999998867512 0.0 0 0.999998986721 5.9604587932e-08 0.0 1.10792899152e-07 0.0916820589777 1.28053464361 1.0</transform>
 			</node>
 			<node type="SoundSource" id="834035176" name="SoundSource">
-				<sample_name/>
+				<sample_name>guid://ca7fcc1f98f11940792e48a97f41b6ac423915e7</sample_name>
 				<sample_stream>0</sample_stream>
 				<source_mask>0x1</source_mask>
 				<reverb_mask>0x1</reverb_mask>
-				<loop>0</loop>
+				<loop>1</loop>
 				<play_on_enable>1</play_on_enable>
 				<restart_on_enable>1</restart_on_enable>
 				<occlusion>1</occlusion>
