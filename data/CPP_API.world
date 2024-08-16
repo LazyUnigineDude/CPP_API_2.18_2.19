@@ -817,8 +817,8 @@
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
-			<controlled>0</controlled>
-			<transform>0.920502662659 -0.390736252069 -3.87430191017e-07 0.0 0.253249138594 0.596607625484 0.7615275383 0.0 -0.297556191683 -0.700988173485 0.648132503033 0.0 -2.43516675557 -3.93568714183 4.35110986949 1.0</transform>
+			<controlled>1</controlled>
+			<transform>-0.968606591225 -0.248598515987 -3.12924385068e-07 0.0 0.0533950403333 -0.208042621613 0.976661264896 0.0 -0.242796599865 0.946000516415 0.214785456657 0.0 -1.12066918388 3.0754573465 2.13401981383 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1675620666" trigger_interaction_enabled="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -845,6 +845,9 @@
 						<value index="1">guid://d6c4098b453eae27ed0317f57ef83ef7952ebed3</value>
 						<value index="2">guid://43dc8e6d0f1a740baa73e5a73975827be8bf9035</value>
 					</parameter>
+					<parameter name="VideoFile">guid://4a768f1dc76892375d5c25d70c108ea41f2a2ee5</parameter>
+					<parameter name="GUINode">1378512173</parameter>
+					<parameter name="SoundNode">834035176</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
@@ -856,6 +859,53 @@
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.66249465949 -3.73269627543 4.50132633363 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="548573719" immovable="1" name="default">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://f56876b3a1b56b0687e8a15d046cc1ab16f9aafb</mesh_name>
+			<surface name="defaultMat" intersection="1" material="43a1b08c9120055145a3850ae84a2edf6358c562"/>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999821186 0.0 0 -3 0 1.0</transform>
+			<node type="ObjectGui" id="1378512173" immovable="1" name="ObjectGui">
+				<gui_name>core/gui/</gui_name>
+				<billboard>0</billboard>
+				<background>1</background>
+				<depth_test>1</depth_test>
+				<mouse_show>1</mouse_show>
+				<control_distance>2</control_distance>
+				<polygon_offset>1</polygon_offset>
+				<physical_width>3.0999999</physical_width>
+				<physical_height>1.79999995</physical_height>
+				<screen_width>1024</screen_width>
+				<screen_height>768</screen_height>
+				<surface name="gui" intersection="1" intersection_mask="0x0" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
+				<transform>-0.999999046326 0 3.25841085669e-07 0.0 3.25841028825e-07 5.96045808265e-08 0.999998867512 0.0 0 0.999998986721 5.9604587932e-08 0.0 1.10792899152e-07 0.0916820589777 1.28053464361 1.0</transform>
+			</node>
+			<node type="SoundSource" id="834035176" name="SoundSource">
+				<sample_name/>
+				<sample_stream>0</sample_stream>
+				<source_mask>0x1</source_mask>
+				<reverb_mask>0x1</reverb_mask>
+				<loop>0</loop>
+				<play_on_enable>1</play_on_enable>
+				<restart_on_enable>1</restart_on_enable>
+				<occlusion>1</occlusion>
+				<occlusion_mask>-1</occlusion_mask>
+				<adaptation>0.25</adaptation>
+				<time>0</time>
+				<pitch>1</pitch>
+				<gain>1</gain>
+				<room_rolloff>0</room_rolloff>
+				<air_absorption>0</air_absorption>
+				<min_distance>0</min_distance>
+				<max_distance>5</max_distance>
+				<cone_inner_angle>0</cone_inner_angle>
+				<cone_outer_angle>120</cone_outer_angle>
+				<cone_outer_gain>0</cone_outer_gain>
+				<cone_outer_gain_hf>1</cone_outer_gain_hf>
+				<playing>0</playing>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1.00000011921 0.0 0 0 1.21353725398 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>

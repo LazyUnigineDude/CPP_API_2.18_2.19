@@ -3,6 +3,7 @@ REGISTER_COMPONENT(Widgets);
 
 void Widgets::Init() {
 
+	//Button
 	Button = Unigine::WidgetButton::create("Click Me");
 	Button->setWidth(50);
 	Button->setFontSize(21);
@@ -15,6 +16,7 @@ void Widgets::Init() {
 	Button->getEventEnter().connect(this, &Widgets::Enter);
 	Button->getEventLeave().connect(this, &Widgets::Leave);
 
+	// Canvas
 	Canvas = Unigine::WidgetCanvas::create();
 	Canvas->setPosition(400, 400);
 
@@ -36,6 +38,7 @@ void Widgets::Init() {
 	Canvas->setTextColor(Text, Unigine::Math::vec4_blue);
 	Canvas->setTextPosition(Text, Unigine::Math::vec2(100, 100));
 
+	// Image
 	Sprite = Unigine::WidgetSprite::create();
 	for (int i = 0; i < ImageFile.size(); i++)
 	{
@@ -47,6 +50,25 @@ void Widgets::Init() {
 		Sprite->setLayerTransform(x, mat);
 	}
 	Sprite->setPosition(500, 150);
+
+
+	// Video
+	Unigine::ObjectGuiPtr VGui = Unigine::static_ptr_cast<Unigine::ObjectGui>(GUINode.get());
+	Video = Unigine::WidgetSpriteVideo::create(/*VGui->getGui(),*/ VideoFile);
+	Video->setWidth(VGui->getScreenWidth());
+	Video->setHeight(VGui->getScreenHeight());
+	Video->setLoop(1);
+	Video->play();
+
+	// Add Sound with Video
+	Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
+	Sound->setSampleName(VideoFile);
+	Sound->play();
+	Video->setSoundSource(Sound);
+
+	// Add Video to Object in World
+	Unigine::GuiPtr VGUIP = VGui->getGui();
+	VGUIP->addChild(Video, VGUIP->ALIGN_EXPAND | VGUIP->ALIGN_OVERLAP);
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	GUI->addChild(Button, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
