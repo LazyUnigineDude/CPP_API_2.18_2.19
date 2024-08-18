@@ -60,6 +60,7 @@ void Widgets::Init() {
 	Video->setLoop(1);
 	Video->play();
 
+	// Best thing is to do sound and video instead of syncing
 	// Add Sound with Video
 	//Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
 	//Sound->play();
