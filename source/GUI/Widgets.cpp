@@ -24,8 +24,8 @@ void Widgets::Init() {
 	Canvas->setPolygonColor(Square, Unigine::Math::vec4_green);
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0,   0, 0));
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3( 200,   0, 0));
-	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0, 200, 0));
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3( 200, 200, 0));
+	Canvas->addPolygonPoint(Square, Unigine::Math::vec3(   0, 200, 0));
 
 	int Line = Canvas->addLine(1);
 	Canvas->setLineColor(Line, Unigine::Math::vec4_red);
@@ -60,10 +60,16 @@ void Widgets::Init() {
 	Video->setLoop(1);
 	Video->play();
 
-	// Best thing is to do sound and video instead of syncing
-	//Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
-	//Sound->play();
-	//Video->setSoundSource(Sound);
+	//// Best thing is to do sound and video instead of syncing
+	Sound = Unigine::static_ptr_cast<Unigine::SoundSource>(SoundNode.get());
+	Sound->play();
+	Video->setSoundSource(Sound);
+
+	//// Works
+	//Ambience = Unigine::AmbientSource::create(SoundFile);
+	//Ambience->play();
+	//Ambience->setLoop(1);
+	//Video->setAmbientSource(Ambience);
 
 	// Add Video to Object in World
 	Unigine::GuiPtr VGUIP = VGui->getGui();
@@ -85,6 +91,14 @@ void Widgets::Update() {
 		Angle = Unigine::Math::clamp(Angle + Unigine::Game::getIFps() * 36, 0.0f, 250.0f);
 		RotateImage();
 	}
+
+	//if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_J)) { Ambience->stop(); }
+	//if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_K)) { Ambience->play(); }
+	//if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_L)) { Ambience->stop(); Ambience->setTime(0); Ambience->play(); }
+		
+	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_J)) { Sound->stop(); }
+	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_K)) { Sound->play(); }
+	if (Unigine::Input::isKeyPressed(Unigine::Input::KEY_L)) { Sound->stop(); Sound->setTime(0); Sound->play(); }
 }
 
 void Widgets::Shutdown() {

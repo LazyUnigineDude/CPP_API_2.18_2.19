@@ -17,6 +17,7 @@ protected:
 	PROP_PARAM(File, VideoFile);
 	PROP_PARAM(Node, GUINode);
 	PROP_PARAM(Node, SoundNode);
+	PROP_PARAM(File, SoundFile);
 
 private:
 	void Enter(const Unigine::WidgetPtr& Widget) {
@@ -38,6 +39,7 @@ private:
 	Unigine::WidgetSpritePtr Sprite;
 	Unigine::WidgetSpriteVideoPtr Video;
 	Unigine::SoundSourcePtr Sound;
+	Unigine::AmbientSourcePtr Ambience;
 	float Angle{ 0 }, hSize{ 128 };
 };
 

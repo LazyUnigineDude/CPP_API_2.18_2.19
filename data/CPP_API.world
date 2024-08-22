@@ -818,7 +818,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>-0.968606591225 -0.248598515987 -3.12924385068e-07 0.0 0.0533950403333 -0.208042621613 0.976661264896 0.0 -0.242796599865 0.946000516415 0.214785456657 0.0 -1.12066918388 3.0754573465 2.13401981383 1.0</transform>
+			<transform>-0.925905168056 -0.377755284309 -1.71363353729e-06 0.0 0.0158329755068 -0.0388121604919 0.999120950699 0.0 -0.377423346043 0.925091505051 0.0419176220894 0.0 -2.26890371676 5.59923032423 2.21800688062 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1675620666" trigger_interaction_enabled="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -848,6 +848,7 @@
 					<parameter name="VideoFile">guid://4b323cbbda24724e2d304ea54fa4b4ea6d634c03</parameter>
 					<parameter name="GUINode">1378512173</parameter>
 					<parameter name="SoundNode">834035176</parameter>
+					<parameter name="SoundFile">guid://ca7fcc1f98f11940792e48a97f41b6ac423915e7</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
@@ -860,7 +861,7 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.66249465949 -3.73269627543 4.50132633363 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="548573719" immovable="1" name="default">
+		<node type="ObjectMeshStatic" id="548573719" immovable="1" name="TV">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://f56876b3a1b56b0687e8a15d046cc1ab16f9aafb</mesh_name>
@@ -887,14 +888,14 @@
 				<source_mask>0x1</source_mask>
 				<reverb_mask>0x1</reverb_mask>
 				<loop>1</loop>
-				<play_on_enable>1</play_on_enable>
-				<restart_on_enable>1</restart_on_enable>
+				<play_on_enable>0</play_on_enable>
+				<restart_on_enable>0</restart_on_enable>
 				<occlusion>1</occlusion>
 				<occlusion_mask>-1</occlusion_mask>
 				<adaptation>0.25</adaptation>
 				<time>0</time>
 				<pitch>1</pitch>
-				<gain>1</gain>
+				<gain>0.218260005</gain>
 				<room_rolloff>0</room_rolloff>
 				<air_absorption>0</air_absorption>
 				<min_distance>0</min_distance>
