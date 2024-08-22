@@ -39,6 +39,8 @@ private:
 	Unigine::WidgetCanvasPtr Canvas;
 	Unigine::WidgetSpritePtr Sprite;
 	Unigine::WidgetSpriteVideoPtr Video;
+	Unigine::WidgetDialogColorPtr Color;
+
 	Unigine::SoundSourcePtr Sound;
 	Unigine::AmbientSourcePtr Ambience;
 	float Angle{ 0 }, hSize{ 128 };

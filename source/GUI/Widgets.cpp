@@ -78,15 +78,23 @@ void Widgets::Init() {
 	//Ambience->setLoop(1);
 	//Video->setAmbientSource(Ambience);
 
-	// Add Video to Object in World
-	Unigine::GuiPtr VGUIP = VGui->getGui();
-	VGUIP->addChild(Video, VGUIP->ALIGN_EXPAND | VGUIP->ALIGN_OVERLAP);
+	// Dialog Color
+	Color = Unigine::WidgetDialogColor::create();
+	Color->setSizeable(1);
+	Color->setPosition(600, 600);
+	Color->setWidth(200);
+	Color->setHeight(200);
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	GUI->addChild(Button, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Sprite, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	GUI->addChild(Color, GUI->ALIGN_OVERLAP);
+
+	// Add Video to Object in World
+	Unigine::GuiPtr VGUIP = VGui->getGui();
+	VGUIP->addChild(Video, VGUIP->ALIGN_EXPAND | VGUIP->ALIGN_OVERLAP);
 }
 
 void Widgets::Update() {
@@ -116,11 +124,13 @@ void Widgets::Shutdown() {
 	if (GUI->isChild(Slider)) GUI->removeChild(Slider);
 	if (GUI->isChild(Canvas)) GUI->removeChild(Canvas);
 	if (GUI->isChild(Sprite)) GUI->removeChild(Sprite);
+	if (GUI->isChild(Color)) GUI->removeChild(Color);
 
 	if (Button) Button.deleteLater();
 	if (Slider) Slider.deleteLater();
 	if (Canvas) Canvas.deleteLater();
 	if (Sprite) Sprite.deleteLater();
+	if (Color) Color.deleteLater();
 
 	// Video
 	Unigine::ObjectGuiPtr VGui = Unigine::static_ptr_cast<Unigine::ObjectGui>(GUINode.get());
