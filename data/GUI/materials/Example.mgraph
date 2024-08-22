@@ -32,7 +32,7 @@
 		"diagonal_neighbors": false,
 		"catmull_resampling": false,
 		"frames_by_velocity": false,
-		"frames_by_color": true,
+		"frames_by_color": false,
 		"blend_mode": 0,
 		"blend_src": 5,
 		"blend_dest": 6
@@ -44,8 +44,8 @@
 		"Material": {
 			"label": "Material",
 			"guid": "829f90678c21529ab2138131aaaf08dc82560e8b",
-			"x": 603,
-			"y": -3,
+			"x": 654,
+			"y": -18,
 			"collapsed": false,
 			"props": {
 			},
@@ -67,8 +67,8 @@
 		"Final": {
 			"label": "Final",
 			"guid": "0f2f417e3b3b7ac5ee9bad604fcb013f4b641d92",
-			"x": 845,
-			"y": 1,
+			"x": 892,
+			"y": -24,
 			"collapsed": false,
 			"props": {
 			},
@@ -85,8 +85,8 @@
 		"Time": {
 			"label": "Auto Game Time",
 			"guid": "a94f3b9d13e16c31d5515286355d3a83d5061672",
-			"x": -352,
-			"y": -148,
+			"x": -1541,
+			"y": 170,
 			"collapsed": false,
 			"props": {
 				"prop": {
@@ -119,30 +119,30 @@
 				}
 			}
 		},
-		"_multiply": {
-			"label": "Multiply",
-			"guid": "a46e6c630ce5a72d1a685824f78bc50de7d7d030",
-			"x": 297,
-			"y": 11,
+		"_add": {
+			"label": "Add",
+			"guid": "6ccf307503a889623da039bef9ac728dd664af2a",
+			"x": -1143,
+			"y": -13,
 			"collapsed": false,
 			"props": {
 			},
 			"inputs": {
 				"input": {
 					"label": "A",
-					"type": "float4",
+					"type": "float",
 					"id": -1822151033
 				},
 				"input": {
 					"label": "B",
-					"type": "float4",
+					"type": "float",
 					"id": 291415938
 				}
 			},
 			"outputs": {
 				"output": {
 					"label": "",
-					"type": "float4",
+					"type": "float",
 					"id": 1723312480
 				}
 			}
@@ -150,8 +150,8 @@
 		"Expression": {
 			"label": "Expression",
 			"guid": "2fcb127542b144c7accae3be0609a9e38215792a",
-			"x": 521,
-			"y": 34,
+			"x": 572,
+			"y": 19,
 			"collapsed": true,
 			"props": {
 				"prop": {
@@ -175,71 +175,30 @@
 				}
 			}
 		},
-		"Texture2D": {
-			"type": "Texture2D",
-			"label": "Texture2D",
-			"guid": "18fd4647ab63d1c1cc318c1818216f8bcfc18e64",
-			"x": -374,
-			"y": 459,
+		"Expression": {
+			"label": "Expression",
+			"guid": "461da1b57358669c3bd677fed4993ff8b996016a",
+			"x": -1221,
+			"y": 87,
 			"collapsed": true,
 			"props": {
 				"prop": {
-					"label": "Path",
-					"widget": "Texture2D",
-					"asset": "d76e4260367523a2ca802bbeedeb98481271b616"
-				},
-				"prop": {
-					"label": "Wrap X",
-					"widget": "Combobox",
-					"combobox_items": [
-						"Repeat",
-						"Clamp",
-						"Border"
-					],
-					"x": 1
-				},
-				"prop": {
-					"label": "Wrap Y",
-					"widget": "Combobox",
-					"combobox_items": [
-						"Repeat",
-						"Clamp",
-						"Border"
-					],
-					"x": 2
-				},
-				"prop": {
-					"label": "Wrap Z",
-					"widget": "Combobox",
-					"combobox_items": [
-						"Repeat",
-						"Clamp",
-						"Border"
-					],
-					"x": 0
-				},
-				"prop": {
-					"label": "Anisotropy",
-					"widget": "Toggle",
-					"x": 1
-				},
-				"prop": {
-					"label": "Force Streaming",
-					"widget": "Toggle",
-					"x": 0
-				},
-				"prop": {
-					"label": "Manual Filtering",
-					"widget": "Toggle",
-					"x": 0
+					"label": "",
+					"widget": "Code",
+					"string": "y"
 				}
 			},
 			"inputs": {
+				"input": {
+					"label": "",
+					"type": "float2",
+					"id": 0
+				}
 			},
 			"outputs": {
 				"output": {
-					"label": "BackLayer.png",
-					"type": "Texture2D",
+					"label": "y",
+					"type": "float",
 					"id": 0
 				}
 			}
@@ -247,8 +206,8 @@
 		"SampleTexture": {
 			"label": "SampleTexture: Default",
 			"guid": "b0b1338da7d86a5c0d5eb3d82bce4f8f5e3b02d9",
-			"x": -217,
-			"y": 157,
+			"x": -459,
+			"y": -437,
 			"collapsed": true,
 			"props": {
 				"prop": {
@@ -314,77 +273,146 @@
 			"texture_data": "Asset",
 			"normal_space": "Tangent Space for UV0"
 		},
-		"cos": {
-			"label": "Cosine",
-			"guid": "936b253df35b5057c0b44fc81e3a47fe6a2fb589",
-			"x": -133,
-			"y": -161,
+		"Vertex UV 0": {
+			"label": "Vertex UV 0",
+			"guid": "6aa22f8b0783fefcb0e708ec8ce3d4b6ba67c178",
+			"x": -1540,
+			"y": -241,
 			"collapsed": false,
 			"props": {
 			},
 			"inputs": {
-				"input": {
-					"label": "Radians",
-					"type": "float",
-					"id": 1877048924
-				}
 			},
 			"outputs": {
 				"output": {
 					"label": "",
-					"type": "float",
-					"id": 1723312480
+					"type": "float2",
+					"id": 0
 				}
 			}
 		},
-		"_multiply": {
-			"label": "Multiply",
-			"guid": "cf75fab7b81e8da31b79323a127b32c18b043ca3",
-			"x": 32,
-			"y": -84,
-			"collapsed": false,
+		"Texture2D": {
+			"type": "Texture2D",
+			"label": "Texture2D",
+			"guid": "6d7fd79b34957201ede75e4e1d7d6750b2f9aa47",
+			"x": -633,
+			"y": -135,
+			"collapsed": true,
 			"props": {
-			},
-			"inputs": {
-				"input": {
-					"label": "A",
-					"type": "float",
-					"id": -1822151033
+				"prop": {
+					"label": "Path",
+					"widget": "Texture2D",
+					"asset": "edf5dbe16c25c3185d9ce7b15e99469442484856"
 				},
-				"input": {
-					"label": "B",
-					"type": "float",
-					"id": 291415938
+				"prop": {
+					"label": "Wrap X",
+					"widget": "Combobox",
+					"combobox_items": [
+						"Repeat",
+						"Clamp",
+						"Border"
+					],
+					"x": 0
+				},
+				"prop": {
+					"label": "Wrap Y",
+					"widget": "Combobox",
+					"combobox_items": [
+						"Repeat",
+						"Clamp",
+						"Border"
+					],
+					"x": 0
+				},
+				"prop": {
+					"label": "Wrap Z",
+					"widget": "Combobox",
+					"combobox_items": [
+						"Repeat",
+						"Clamp",
+						"Border"
+					],
+					"x": 0
+				},
+				"prop": {
+					"label": "Anisotropy",
+					"widget": "Toggle",
+					"x": 1
+				},
+				"prop": {
+					"label": "Force Streaming",
+					"widget": "Toggle",
+					"x": 0
+				},
+				"prop": {
+					"label": "Manual Filtering",
+					"widget": "Toggle",
+					"x": 0
 				}
+			},
+			"inputs": {
 			},
 			"outputs": {
 				"output": {
-					"label": "",
-					"type": "float",
-					"id": 1723312480
+					"label": "checker_d.texture",
+					"type": "Texture2D",
+					"id": 0
 				}
 			}
 		},
-		"SubGraph": {
-			"label": "Pi2",
-			"guid": "80bbb8c17df0f8b0b56055fcd47aa9fd7b8ec4cd",
-			"x": -89,
-			"y": 73,
+		"Expression": {
+			"label": "Expression",
+			"guid": "521e40257479dd0c1f37862eb7a050706a95a69a",
+			"x": -982,
+			"y": -108,
 			"collapsed": true,
 			"props": {
 				"prop": {
 					"label": "",
-					"widget": "SubGraph",
-					"asset": "b48636a49bb5b4da3418ee4c1659f15034193293"
+					"widget": "Code",
+					"string": "x"
 				}
 			},
 			"inputs": {
+				"input": {
+					"label": "",
+					"type": "float2",
+					"id": 0
+				}
 			},
 			"outputs": {
 				"output": {
-					"label": "Pi * 2",
+					"label": "x",
 					"type": "float",
-					"id": -501222354
+					"id": 0
+				}
+			}
+		},
+		"_compose_float2": {
+			"label": "Compose Float2",
+			"guid": "0e0f8261275d23ace39b92dab5182692775b8606",
+			"x": -904,
+			"y": -296,
+			"collapsed": false,
+			"props": {
+			},
+			"inputs": {
+				"input": {
+					"label": "X",
+					"type": "float",
+					"id": 1420360541
+				},
+				"input": {
+					"label": "Y",
+					"type": "float",
+					"id": 260209567
+				}
+			},
+			"outputs": {
+				"output": {
+					"label": "",
+					"type": "float2",
+					"id": 1723312480
 				}
 			}
 		}
@@ -416,27 +444,27 @@
 		},
 		"anchor": {
 			"input_index": 0,
-			"input_type": "float4",
+			"input_type": "float",
 			"input_label": "A",
 			"input_id": -1822151033,
-			"input_node": "a46e6c630ce5a72d1a685824f78bc50de7d7d030",
+			"input_node": "6ccf307503a889623da039bef9ac728dd664af2a",
 			"output_index": 0,
 			"output_type": "float",
-			"output_label": "",
-			"output_id": 1723312480,
-			"output_node": "cf75fab7b81e8da31b79323a127b32c18b043ca3"
+			"output_label": "y",
+			"output_id": 0,
+			"output_node": "461da1b57358669c3bd677fed4993ff8b996016a"
 		},
 		"anchor": {
 			"input_index": 1,
-			"input_type": "float4",
+			"input_type": "float",
 			"input_label": "B",
 			"input_id": 291415938,
-			"input_node": "a46e6c630ce5a72d1a685824f78bc50de7d7d030",
+			"input_node": "6ccf307503a889623da039bef9ac728dd664af2a",
 			"output_index": 0,
-			"output_type": "float4",
-			"output_label": "Color",
+			"output_type": "float",
+			"output_label": "",
 			"output_id": 0,
-			"output_node": "b0b1338da7d86a5c0d5eb3d82bce4f8f5e3b02d9"
+			"output_node": "a94f3b9d13e16c31d5515286355d3a83d5061672"
 		},
 		"anchor": {
 			"input_index": 0,
@@ -446,9 +474,21 @@
 			"input_node": "2fcb127542b144c7accae3be0609a9e38215792a",
 			"output_index": 0,
 			"output_type": "float4",
+			"output_label": "Color",
+			"output_id": 0,
+			"output_node": "b0b1338da7d86a5c0d5eb3d82bce4f8f5e3b02d9"
+		},
+		"anchor": {
+			"input_index": 0,
+			"input_type": "float2",
+			"input_label": "",
+			"input_id": 0,
+			"input_node": "461da1b57358669c3bd677fed4993ff8b996016a",
+			"output_index": 0,
+			"output_type": "float2",
 			"output_label": "",
-			"output_id": 1723312480,
-			"output_node": "a46e6c630ce5a72d1a685824f78bc50de7d7d030"
+			"output_id": 0,
+			"output_node": "6aa22f8b0783fefcb0e708ec8ce3d4b6ba67c178"
 		},
 		"anchor": {
 			"input_index": 0,
@@ -458,45 +498,57 @@
 			"input_node": "b0b1338da7d86a5c0d5eb3d82bce4f8f5e3b02d9",
 			"output_index": 0,
 			"output_type": "Texture2D",
-			"output_label": "BackLayer.png",
+			"output_label": "checker_d.texture",
 			"output_id": 0,
-			"output_node": "18fd4647ab63d1c1cc318c1818216f8bcfc18e64"
+			"output_node": "6d7fd79b34957201ede75e4e1d7d6750b2f9aa47"
 		},
 		"anchor": {
-			"input_index": 0,
-			"input_type": "float",
-			"input_label": "Radians",
-			"input_id": 1877048924,
-			"input_node": "936b253df35b5057c0b44fc81e3a47fe6a2fb589",
+			"input_index": 1,
+			"input_type": "float2",
+			"input_label": "UV",
+			"input_id": 5,
+			"input_node": "b0b1338da7d86a5c0d5eb3d82bce4f8f5e3b02d9",
 			"output_index": 0,
-			"output_type": "float",
-			"output_label": "",
-			"output_id": 0,
-			"output_node": "a94f3b9d13e16c31d5515286355d3a83d5061672"
-		},
-		"anchor": {
-			"input_index": 0,
-			"input_type": "float",
-			"input_label": "A",
-			"input_id": -1822151033,
-			"input_node": "cf75fab7b81e8da31b79323a127b32c18b043ca3",
-			"output_index": 0,
-			"output_type": "float",
+			"output_type": "float2",
 			"output_label": "",
 			"output_id": 1723312480,
-			"output_node": "936b253df35b5057c0b44fc81e3a47fe6a2fb589"
+			"output_node": "0e0f8261275d23ace39b92dab5182692775b8606"
+		},
+		"anchor": {
+			"input_index": 0,
+			"input_type": "float2",
+			"input_label": "",
+			"input_id": 0,
+			"input_node": "521e40257479dd0c1f37862eb7a050706a95a69a",
+			"output_index": 0,
+			"output_type": "float2",
+			"output_label": "",
+			"output_id": 0,
+			"output_node": "6aa22f8b0783fefcb0e708ec8ce3d4b6ba67c178"
+		},
+		"anchor": {
+			"input_index": 0,
+			"input_type": "float",
+			"input_label": "X",
+			"input_id": 1420360541,
+			"input_node": "0e0f8261275d23ace39b92dab5182692775b8606",
+			"output_index": 0,
+			"output_type": "float",
+			"output_label": "x",
+			"output_id": 0,
+			"output_node": "521e40257479dd0c1f37862eb7a050706a95a69a"
 		},
 		"anchor": {
 			"input_index": 1,
 			"input_type": "float",
-			"input_label": "B",
-			"input_id": 291415938,
-			"input_node": "cf75fab7b81e8da31b79323a127b32c18b043ca3",
+			"input_label": "Y",
+			"input_id": 260209567,
+			"input_node": "0e0f8261275d23ace39b92dab5182692775b8606",
 			"output_index": 0,
 			"output_type": "float",
-			"output_label": "Pi * 2",
-			"output_id": -501222354,
-			"output_node": "80bbb8c17df0f8b0b56055fcd47aa9fd7b8ec4cd"
+			"output_label": "",
+			"output_id": 1723312480,
+			"output_node": "6ccf307503a889623da039bef9ac728dd664af2a"
 		}
 	}
 }

@@ -818,7 +818,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>-0.925905168056 -0.377755284309 -1.71363353729e-06 0.0 0.0158329755068 -0.0388121604919 0.999120950699 0.0 -0.377423346043 0.925091505051 0.0419176220894 0.0 -2.26890371676 5.59923032423 2.21800688062 1.0</transform>
+			<transform>0.963143289089 -0.268988996744 -8.7916851043e-07 0.0 0.0777600109577 0.278424710035 0.957305133343 0.0 -0.257504284382 -0.922022044659 0.289079457521 0.0 -1.90472414494 -4.98490492158 2.3012509279 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1675620666" trigger_interaction_enabled="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -845,11 +845,11 @@
 						<value index="1">guid://d6c4098b453eae27ed0317f57ef83ef7952ebed3</value>
 						<value index="2">guid://43dc8e6d0f1a740baa73e5a73975827be8bf9035</value>
 					</parameter>
-					<parameter name="MaterialFile">12f6d36f4003dc2ddf499a924021a817eee6bddb</parameter>
+					<parameter name="SoundFile">guid://ca7fcc1f98f11940792e48a97f41b6ac423915e7</parameter>
 					<parameter name="VideoFile">guid://4b323cbbda24724e2d304ea54fa4b4ea6d634c03</parameter>
+					<parameter name="MaterialFile">12f6d36f4003dc2ddf499a924021a817eee6bddb</parameter>
 					<parameter name="GUINode">1378512173</parameter>
 					<parameter name="SoundNode">834035176</parameter>
-					<parameter name="SoundFile">guid://ca7fcc1f98f11940792e48a97f41b6ac423915e7</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
@@ -867,7 +867,7 @@
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://f56876b3a1b56b0687e8a15d046cc1ab16f9aafb</mesh_name>
 			<surface name="defaultMat" intersection="1" material="43a1b08c9120055145a3850ae84a2edf6358c562"/>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999821186 0.0 0 -3 0 1.0</transform>
+			<transform>-0.707106292248 0.707106947899 0 0.0 -0.707107067108 -0.707106411457 0 0.0 0 0 0.999999761581 0.0 4.24264240265 1.24263846874 -7.94919685632e-14 1.0</transform>
 			<node type="ObjectGui" id="1378512173" immovable="1" name="ObjectGui">
 				<gui_name>core/gui/</gui_name>
 				<billboard>0</billboard>

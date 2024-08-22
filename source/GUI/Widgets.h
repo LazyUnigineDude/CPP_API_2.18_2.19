@@ -14,11 +14,11 @@ public:
 protected:
 	void Init(), Update(), Shutdown();
 	PROP_ARRAY(File, ImageFile);
-	PROP_PARAM(Material, MaterialFile);
+	PROP_PARAM(File, SoundFile);
 	PROP_PARAM(File, VideoFile);
+	PROP_PARAM(Material, MaterialFile);
 	PROP_PARAM(Node, GUINode);
 	PROP_PARAM(Node, SoundNode);
-	PROP_PARAM(File, SoundFile);
 
 private:
 	void Enter(const Unigine::WidgetPtr& Widget) {
@@ -33,8 +33,9 @@ private:
 		Button->setButtonColor(Unigine::Math::vec4_black);
 	}
 
-	void RotateImage();
+	void RotateImage(int clockWise);
 
+	Unigine::WidgetLabelPtr Label;
 	Unigine::WidgetButtonPtr Button;
 	Unigine::WidgetSliderPtr Slider;
 	Unigine::WidgetCanvasPtr Canvas;
