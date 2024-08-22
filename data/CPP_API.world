@@ -845,6 +845,7 @@
 						<value index="1">guid://d6c4098b453eae27ed0317f57ef83ef7952ebed3</value>
 						<value index="2">guid://43dc8e6d0f1a740baa73e5a73975827be8bf9035</value>
 					</parameter>
+					<parameter name="MaterialFile">12f6d36f4003dc2ddf499a924021a817eee6bddb</parameter>
 					<parameter name="VideoFile">guid://4b323cbbda24724e2d304ea54fa4b4ea6d634c03</parameter>
 					<parameter name="GUINode">1378512173</parameter>
 					<parameter name="SoundNode">834035176</parameter>

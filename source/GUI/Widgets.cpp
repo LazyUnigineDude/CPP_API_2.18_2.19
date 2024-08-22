@@ -21,7 +21,7 @@ void Widgets::Init() {
 	Slider->setOrientation(0);
 	Slider->setHeight(250);
 	Slider->setButtonHeight(100);
-	Slider->setPosition(800, 100);
+	Slider->setPosition(100, 150);
 
 	// Canvas
 	Canvas = Unigine::WidgetCanvas::create();
@@ -58,6 +58,11 @@ void Widgets::Init() {
 	}
 	Sprite->setPosition(500, 150);
 
+	// Image with Shaders
+	Shader = Unigine::WidgetSpriteShader::create();
+	Shader->setPosition(800 - hSize, 150 - hSize);
+	Shader->setTexture(ImageFile[0]);
+	Shader->setMaterial(MaterialFile);
 
 	// Video
 	Unigine::ObjectGuiPtr VGui = Unigine::static_ptr_cast<Unigine::ObjectGui>(GUINode.get());
@@ -81,7 +86,7 @@ void Widgets::Init() {
 	// Dialog Color
 	Color = Unigine::WidgetDialogColor::create();
 	Color->setSizeable(1);
-	Color->setPosition(600, 600);
+	Color->setPosition(800, 400);
 	Color->setWidth(200);
 	Color->setHeight(200);
 
@@ -90,6 +95,7 @@ void Widgets::Init() {
 	GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Sprite, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	GUI->addChild(Shader, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Color, GUI->ALIGN_OVERLAP);
 
 	// Add Video to Object in World
@@ -124,12 +130,14 @@ void Widgets::Shutdown() {
 	if (GUI->isChild(Slider)) GUI->removeChild(Slider);
 	if (GUI->isChild(Canvas)) GUI->removeChild(Canvas);
 	if (GUI->isChild(Sprite)) GUI->removeChild(Sprite);
+	if (GUI->isChild(Shader)) GUI->removeChild(Shader);
 	if (GUI->isChild(Color)) GUI->removeChild(Color);
 
 	if (Button) Button.deleteLater();
 	if (Slider) Slider.deleteLater();
 	if (Canvas) Canvas.deleteLater();
 	if (Sprite) Sprite.deleteLater();
+	if (Shader) Shader.deleteLater();
 	if (Color) Color.deleteLater();
 
 	// Video

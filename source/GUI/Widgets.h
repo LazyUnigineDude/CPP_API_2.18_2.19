@@ -14,6 +14,7 @@ public:
 protected:
 	void Init(), Update(), Shutdown();
 	PROP_ARRAY(File, ImageFile);
+	PROP_PARAM(Material, MaterialFile);
 	PROP_PARAM(File, VideoFile);
 	PROP_PARAM(Node, GUINode);
 	PROP_PARAM(Node, SoundNode);
@@ -38,6 +39,7 @@ private:
 	Unigine::WidgetSliderPtr Slider;
 	Unigine::WidgetCanvasPtr Canvas;
 	Unigine::WidgetSpritePtr Sprite;
+	Unigine::WidgetSpriteShaderPtr Shader;
 	Unigine::WidgetSpriteVideoPtr Video;
 	Unigine::WidgetDialogColorPtr Color;
 
