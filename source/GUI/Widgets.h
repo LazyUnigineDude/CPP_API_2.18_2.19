@@ -35,6 +35,7 @@ private:
 	void RotateImage();
 
 	Unigine::WidgetButtonPtr Button;
+	Unigine::WidgetSliderPtr Slider;
 	Unigine::WidgetCanvasPtr Canvas;
 	Unigine::WidgetSpritePtr Sprite;
 	Unigine::WidgetSpriteVideoPtr Video;

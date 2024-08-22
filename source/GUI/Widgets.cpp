@@ -16,6 +16,13 @@ void Widgets::Init() {
 	Button->getEventEnter().connect(this, &Widgets::Enter);
 	Button->getEventLeave().connect(this, &Widgets::Leave);
 
+	//Slider
+	Slider = Unigine::WidgetSlider::create(0, 100, 50);
+	Slider->setOrientation(0);
+	Slider->setHeight(250);
+	Slider->setButtonHeight(100);
+	Slider->setPosition(800, 100);
+
 	// Canvas
 	Canvas = Unigine::WidgetCanvas::create();
 	Canvas->setPosition(400, 400);
@@ -77,6 +84,7 @@ void Widgets::Init() {
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	GUI->addChild(Button, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
+	GUI->addChild(Slider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Sprite, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 }
@@ -105,12 +113,22 @@ void Widgets::Shutdown() {
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	if (GUI->isChild(Button)) GUI->removeChild(Button);
+	if (GUI->isChild(Slider)) GUI->removeChild(Slider);
 	if (GUI->isChild(Canvas)) GUI->removeChild(Canvas);
 	if (GUI->isChild(Sprite)) GUI->removeChild(Sprite);
 
 	if (Button) Button.deleteLater();
+	if (Slider) Slider.deleteLater();
 	if (Canvas) Canvas.deleteLater();
 	if (Sprite) Sprite.deleteLater();
+
+	// Video
+	Unigine::ObjectGuiPtr VGui = Unigine::static_ptr_cast<Unigine::ObjectGui>(GUINode.get());
+	Unigine::GuiPtr VGUIP = VGui->getGui();
+	if (VGUIP->isChild(Video)) VGUIP->removeChild(Video);
+	Sound->stop();
+	//Ambience->stop();
+	if (Video) Video.deleteLater();
 }
 
 void Widgets::RotateImage() {
