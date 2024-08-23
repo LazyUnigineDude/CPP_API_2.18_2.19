@@ -862,7 +862,7 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.66249465949 -3.73269627543 4.50132633363 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="548573719" immovable="1" name="TV">
+		<node type="ObjectMeshStatic" id="548573719" enabled="0" immovable="1" name="TV">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://f56876b3a1b56b0687e8a15d046cc1ab16f9aafb</mesh_name>

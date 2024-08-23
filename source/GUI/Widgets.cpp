@@ -38,39 +38,39 @@ void Widgets::Init() {
 	Canvas = Unigine::WidgetCanvas::create();
 	Canvas->setPosition(400, 400);
 
-	int Square = Canvas->addPolygon(0);
+	int Square = Canvas->addPolygon(); // 200, 200
 	Canvas->setPolygonColor(Square, Unigine::Math::vec4_green);
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3_zero);
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3_right * 200);
 	Canvas->addPolygonPoint(Square, (Unigine::Math::vec3_right + Unigine::Math::vec3_forward) * 200);
 	Canvas->addPolygonPoint(Square, Unigine::Math::vec3_forward * 200);
 
-	int Line = Canvas->addLine(1);
+	int Line = Canvas->addLine();
 	Canvas->setLineColor(Line, Unigine::Math::vec4_red);
 	Canvas->addLinePoint(Line, Unigine::Math::vec2( 10, 100));
 	Canvas->addLinePoint(Line, Unigine::Math::vec2( 50, 150));
 
-	int Text = Canvas->addText(2);
+	int Text = Canvas->addText();
 	Canvas->setTextSize(Text, 26);
 	Canvas->setTextText(Text, "Hello");
 	Canvas->setTextColor(Text, Unigine::Math::vec4_blue);
-	Canvas->setTextPosition(Text, Unigine::Math::vec2_one * 100);
+	Canvas->setTextPosition(Text, Unigine::Math::vec2_one * 100); //Pos 100, 100
 
 	// Add Image to Canvas Shape
-	int Image = Canvas->addPolygon(1);
-	Canvas->setPolygonTexture(Image, ImageFile[0]);
+	int Image = Canvas->addPolygon(1);	// 200x200 at pos 400, 0
+	Canvas->setPolygonTexture(Image, ImageFile[0]); // HardCoding Positions
 
-	Canvas->addPolygonPoint(Image, Unigine::Math::vec3_right * 200);
-	Canvas->setPolygonTexCoord(Image, Unigine::Math::vec2_zero);
+	Canvas->addPolygonPoint(Image,Unigine::Math::vec3_right * 200);	 // 200, 0
+	Canvas->setPolygonTexCoord(Image,Unigine::Math::vec2_zero);		// 0, 0
 
-	Canvas->addPolygonPoint(Image, Unigine::Math::vec3_right * 400);
-	Canvas->setPolygonTexCoord(Image, Unigine::Math::vec2(1, 0));
+	Canvas->addPolygonPoint(Image,Unigine::Math::vec3_right * 400); // 400, 0
+	Canvas->setPolygonTexCoord(Image,Unigine::Math::vec2(1, 0));  //  1, 0
 
-	Canvas->addPolygonPoint(Image, (Unigine::Math::vec3_right * 400 + Unigine::Math::vec3_forward * 200));
-	Canvas->setPolygonTexCoord(Image, Unigine::Math::vec2_one);
+	Canvas->addPolygonPoint(Image, (Unigine::Math::vec3_right * 400 +Unigine::Math::vec3_forward * 200));
+	Canvas->setPolygonTexCoord(Image,Unigine::Math::vec2_one);// 400, 200 & 1, 1
 
-	Canvas->addPolygonPoint(Image, (Unigine::Math::vec3_right + Unigine::Math::vec3_forward) * 200);
-	Canvas->setPolygonTexCoord(Image, Unigine::Math::vec2(0, 1));
+	Canvas->addPolygonPoint(Image, (Unigine::Math::vec3_right +Unigine::Math::vec3_forward) * 200);
+	Canvas->setPolygonTexCoord(Image,Unigine::Math::vec2(0, 1));// 200, 200 & 0, 1
 
 	// Image
 	Sprite = Unigine::WidgetSprite::create();
