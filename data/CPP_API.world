@@ -818,7 +818,7 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>0.963143289089 -0.268988996744 -8.7916851043e-07 0.0 0.0777600109577 0.278424710035 0.957305133343 0.0 -0.257504284382 -0.922022044659 0.289079457521 0.0 -1.90472414494 -4.98490492158 2.3012509279 1.0</transform>
+			<transform>0.85718870163 -0.51500248909 1.84327363968e-05 0.0 0.16769322753 0.279148578644 0.945491850376 0.0 -0.486935853958 -0.810461819172 0.325645446777 0.0 -1.27865579907 -3.67847731101 2.77362767766 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1675620666" trigger_interaction_enabled="1" name="material_ball">
 			<streaming_mode_vram>0</streaming_mode_vram>
@@ -837,7 +837,7 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="264567455" enabled="0" name="Widgets">
+		<node type="NodeDummy" id="264567455" name="Widgets">
 			<properties>
 				<property parent="bf8a6678a1e36e3d2c45861b80308b477e3345ac" guid="f6bec3a3ec13fcd7ce024225eec59c0d5328516f">
 					<parameter name="ImageFile">
@@ -850,11 +850,12 @@
 					<parameter name="MaterialFile">12f6d36f4003dc2ddf499a924021a817eee6bddb</parameter>
 					<parameter name="GUINode">1378512173</parameter>
 					<parameter name="SoundNode">834035176</parameter>
+					<parameter name="GUIMeshNode">16614662</parameter>
 				</property>
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="NodeDummy" id="1493359004" name="ChessGUI">
+		<node type="NodeDummy" id="1493359004" enabled="0" name="ChessGUI">
 			<properties>
 				<property parent="a12a812facb8df1b3cf179df7053a5e09f362713" guid="8614ec11ace64cc24422db832f9a32954e5f05bd">
 					<parameter name="ChessNode">1675620666</parameter>
@@ -862,7 +863,7 @@
 			</properties>
 			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 3.66249465949 -3.73269627543 4.50132633363 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="548573719" enabled="0" immovable="1" name="TV">
+		<node type="ObjectMeshStatic" id="548573719" immovable="1" name="TV">
 			<streaming_mode_vram>0</streaming_mode_vram>
 			<streaming_mode_ram>0</streaming_mode_ram>
 			<mesh_name>guid://f56876b3a1b56b0687e8a15d046cc1ab16f9aafb</mesh_name>
@@ -881,7 +882,7 @@
 				<screen_width>1024</screen_width>
 				<screen_height>768</screen_height>
 				<surface name="gui" intersection="1" intersection_mask="0x0" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999999046326 0 3.25841085669e-07 0.0 3.25841028825e-07 5.96045808265e-08 0.999998867512 0.0 0 0.999998986721 5.9604587932e-08 0.0 1.10792899152e-07 0.0916820589777 1.28053464361 1.0</transform>
+				<transform>-0.999999072769 1.68587899529e-07 3.57627527592e-07 0.0 3.79321230087e-07 -4.21466249065e-08 0.999998867512 0.0 1.68587966864e-07 0.999998988476 2.98022975187e-08 0.0 1.10792898855e-07 0.0916820589777 1.28053464361 1.0</transform>
 			</node>
 			<node type="SoundSource" id="834035176" name="SoundSource">
 				<sample_name>guid://ca7fcc1f98f11940792e48a97f41b6ac423915e7</sample_name>
@@ -908,6 +909,19 @@
 				<playing>0</playing>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1.00000011921 0.0 0 0 1.21353725398 1.0</transform>
 			</node>
+		</node>
+		<node type="ObjectGuiMesh" id="16614662" immovable="1" name="ObjectGuiMesh">
+			<streaming_mode_vram>0</streaming_mode_vram>
+			<streaming_mode_ram>0</streaming_mode_ram>
+			<mesh_name>guid://31a23d2d7fca789666a512400ee5ef176daf321b</mesh_name>
+			<gui_name/>
+			<mouse_show>1</mouse_show>
+			<background>0</background>
+			<control_distance>0</control_distance>
+			<screen_width>512</screen_width>
+			<screen_height>512</screen_height>
+			<surface name="box" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 1.56939328114 0 1.08946390434 1.0</transform>
 		</node>
 	</editor>
 	<console>

@@ -19,6 +19,7 @@ protected:
 	PROP_PARAM(Material, MaterialFile);
 	PROP_PARAM(Node, GUINode);
 	PROP_PARAM(Node, SoundNode);
+	PROP_PARAM(Node, GUIMeshNode);
 
 private:
 	void Enter(const Unigine::WidgetPtr& Widget) {

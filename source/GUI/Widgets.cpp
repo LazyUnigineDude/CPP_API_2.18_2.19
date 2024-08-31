@@ -118,7 +118,7 @@ void Widgets::Init() {
 	Color->setCancelText("Cancel the changes my dudes");
 	Color->setOkText("OK Dudes we pick this");
 	Color->setSizeable(1);
-	Color->setPosition(800, 400);
+	//Color->setPosition(800, 400);
 	Color->setWidth(200);
 	Color->setHeight(200);
 	Color->getEventClicked().connect(
@@ -137,11 +137,15 @@ void Widgets::Init() {
 	GUI->addChild(Canvas, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Sprite, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 	GUI->addChild(Shader, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
-	GUI->addChild(Color, GUI->ALIGN_OVERLAP);
+	//GUI->addChild(Color, GUI->ALIGN_OVERLAP);		// Moving the color to the GUIMesh
 
 	// Add Video to Object in World
 	Unigine::GuiPtr VGUIP = VGui->getGui();
 	VGUIP->addChild(Video, VGUIP->ALIGN_EXPAND | VGUIP->ALIGN_OVERLAP);
+
+	Unigine::ObjectGuiMeshPtr mGUI = Unigine::static_ptr_cast<Unigine::ObjectGuiMesh>(GUIMeshNode.get());
+	Unigine::GuiPtr mGUIP = mGUI->getGui();
+	mGUIP->addChild(Color, mGUIP->ALIGN_EXPAND | mGUIP->ALIGN_OVERLAP);
 }
 
 void Widgets::Update() {
@@ -176,12 +180,17 @@ void Widgets::Shutdown() {
 	if (Canvas) Canvas.deleteLater();
 	if (Sprite) Sprite.deleteLater();
 	if (Shader) Shader.deleteLater();
-	if (Color) Color.deleteLater();
 
 	// Video
 	Unigine::ObjectGuiPtr VGui = Unigine::static_ptr_cast<Unigine::ObjectGui>(GUINode.get());
 	Unigine::GuiPtr VGUIP = VGui->getGui();
 	if (VGUIP->isChild(Video)) VGUIP->removeChild(Video);
+
+	Unigine::ObjectGuiMeshPtr mGUI = Unigine::static_ptr_cast<Unigine::ObjectGuiMesh>(GUIMeshNode.get());
+	Unigine::GuiPtr mGUIP = mGUI->getGui();
+	if (mGUIP->isChild(Video)) mGUIP->removeChild(Video);
+	if (Color) Color.deleteLater();
+
 	Sound->stop();
 	//Ambience->stop();
 	if (Video) Video.deleteLater();
