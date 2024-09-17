@@ -42,8 +42,8 @@ void TriggerExample::Init() {
 	}
 
 	if (_PT) {
-		_PT->getEventEnter().connect(&EnterPhysical);
-		_PT->getEventLeave().connect(&LeavePhysical);
+		_PT->getEventEnter().connect(ECs, &EnterPhysical);
+		_PT->getEventLeave().connect(ECs, &LeavePhysical);
 	}
 
 	if (_WT) {

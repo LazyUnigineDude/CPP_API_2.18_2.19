@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>4b323cbbda24724e2d304ea54fa4b4ea6d634c03</guid>
 	<type>video</type>
-	<hash>bd386c67</hash>
+	<hash>4e05d3fe</hash>
 	<runtimes>
 		<runtime id="4b323cbbda24724e2d304ea54fa4b4ea6d634c03" name="Wildlife-Windows-7-Sample-Video.ogv" link="0"/>
 	</runtimes>

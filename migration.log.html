@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Migration log file</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		body {
+			background: #1a242a;
+			color: #ececec;
+			margin: 20px;
+			font-size: 14px;
+			font-family: 'Courier New', Courier, monospace;
+			counter-reset: lognum;
+			tab-size: 4;
+		}
+		
+		.m, .w, .e {
+			padding: 3px;
+			white-space: pre-wrap;
+			line-height: 16px;
+		}
+		
+		.m:before, .w:before, .e:before {
+			counter-increment: lognum;
+			content: counter(lognum) ". ";
+		}
+		
+		.m {
+			color: #ececec;
+		}
+		
+		.w {
+			background-color: #FCF8E3;
+			color: #8A6D3B;
+		}
+		
+		.e {
+			background-color: #d64500;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+<div class="m">Start migration to version "2.19.0.0"</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d12_dxc.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_vk.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/unigine.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/editor.cache</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.thumbnails</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.cache_textures</div>
+<div class="m">update materials ...</div>
+<div class="m">update material graphs ...</div>
+<div class="m">migrate properties ...</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/default.bitmasks.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/CameraDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessGUI.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ConstMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DayNightCycle.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DerivedComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/GettingComponentsLogic.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Movement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/PhysicsMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ScreenDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/SimpleDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TimeController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TriggerExample.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TruckController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Widgets.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.config.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/BackLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/FrontLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Pointer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/tv.obj.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.mp3.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.ogv.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/defaultmat.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/Example.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/mesh_base_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/Camera.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_a.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_alb.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_n.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_sh.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Capture.PNG.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/City.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/grid_for_world_creation_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/MAN TGS NEU.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/blue.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/body.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/grid.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/lights.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.003.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.004.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.005.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.006.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.007.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.008.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.010.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.011.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.013.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.014.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.015.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.016.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.017.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/o_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/rastmat.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/r_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/tire.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/trailer.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/vd_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/2b/2bdf2610177e422f32ce09c2dcbabe396d465244.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/38/382e1240758ba6a68d18999c19777527da12dd2b.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/79/79996141ff998a4e3c7f756bce5a80eddc0f5994.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/c1/c15c85c4324b44304e407686d36a41bd1077d321.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/d4/d4dfd906428892a3e768a17459fe55a24c5ceb0c.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render"</div>
+<div class="m">Start migration to version "2.19.0.1"</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d12_dxc.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_vk.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/unigine.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/editor.cache</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.thumbnails</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.cache_textures</div>
+<div class="m">update materials ...</div>
+<div class="m">update material graphs ...</div>
+<div class="m">migrate properties ...</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/default.bitmasks.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/CameraDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessGUI.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ConstMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DayNightCycle.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DerivedComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/GettingComponentsLogic.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Movement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/PhysicsMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ScreenDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/SimpleDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TimeController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TriggerExample.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TruckController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Widgets.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.config.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/BackLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/FrontLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Pointer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/tv.obj.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.mp3.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.ogv.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/defaultmat.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/Example.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/mesh_base_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/Camera.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_a.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_alb.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_n.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_sh.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Capture.PNG.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/City.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/grid_for_world_creation_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/MAN TGS NEU.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/blue.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/body.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/grid.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/lights.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.003.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.004.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.005.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.006.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.007.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.008.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.010.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.011.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.013.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.014.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.015.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.016.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.017.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/o_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/rastmat.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/r_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/tire.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/trailer.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/vd_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/2b/2bdf2610177e422f32ce09c2dcbabe396d465244.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/38/382e1240758ba6a68d18999c19777527da12dd2b.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/79/79996141ff998a4e3c7f756bce5a80eddc0f5994.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/c1/c15c85c4324b44304e407686d36a41bd1077d321.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/d4/d4dfd906428892a3e768a17459fe55a24c5ceb0c.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render"</div>
+<div class="m">Start migration to version "2.19.0.2"</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d11_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_d3d12_dxc.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_vk.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl_debug.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/shader_gl.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/unigine.cache</div>
+<div class="m"> Remove D:/Unigine/CPP_API/data/editor.cache</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.thumbnails</div>
+<div class="m"> Remove directory D:/Unigine/CPP_API/data/.cache_textures</div>
+<div class="m">update materials ...</div>
+<div class="m">update material graphs ...</div>
+<div class="m">migrate properties ...</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/box_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/default.bitmasks.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/CameraDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessGUI.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ChessMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ConstMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DayNightCycle.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/DerivedComponentCheck.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/GettingComponentsLogic.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Movement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/PhysicsMovement.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/ScreenDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/SimpleDetect.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TimeController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TriggerExample.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/TruckController.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/ComponentSystem/Widgets.prop.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.config.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/BackLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/FrontLayer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Pointer.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/tv.obj.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.mp3.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/Wildlife-Windows-7-Sample-Video.ogv.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/defaultmat.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/Example.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/GUI/materials/mesh_base_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/Camera.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane.mesh.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Raycast/plane_mesh_base.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_a.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_alb.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_mat_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_n.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_material_ball/material_ball_sh.png.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Capture.PNG.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/City.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/grid_for_world_creation_0.mat.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/MAN TGS NEU.fbx.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_matt.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/black_shiny.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/blue.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/body.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/chrome.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/grid.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/interior.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/lights.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.002.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.003.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.004.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.005.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.006.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.007.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.008.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.010.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.011.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.013.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.014.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.015.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.016.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.017.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/material.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/o_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/rastmat.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/r_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.001.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/silver.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/tire.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/trailer.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/materials/vd_glass.mgraph.meta"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.controls"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/default.user"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/configs/editor.boot"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/material_ball.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/2b/2bdf2610177e422f32ce09c2dcbabe396d465244.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/38/382e1240758ba6a68d18999c19777527da12dd2b.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/79/79996141ff998a4e3c7f756bce5a80eddc0f5994.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/c1/c15c85c4324b44304e407686d36a41bd1077d321.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/.runtimes/d4/d4dfd906428892a3e768a17459fe55a24c5ceb0c.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/Truck/Truck.node"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API GetComponents.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Camera.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_Coroutines.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_API_DayNIght.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/CPP_Triggers.world"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_extreme.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_high.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_low.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_medium.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_ultra.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/template_assets/template_render_settings/template_virtual_reality.render"</div>
+<div class="m">upgrading "D:/Unigine/CPP_API/data/root_mount.umount"</div>
+</body>
+</html>

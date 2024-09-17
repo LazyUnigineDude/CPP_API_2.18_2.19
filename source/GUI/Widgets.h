@@ -48,6 +48,8 @@ private:
 	Unigine::SoundSourcePtr Sound;
 	Unigine::AmbientSourcePtr Ambience;
 	float Angle{ 0 }, hSize{ 128 };
+
+	Unigine::EventConnections EC;
 };
 
 void Clicked(const Unigine::WidgetPtr& Widget) {

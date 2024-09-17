@@ -17,8 +17,7 @@
 		"two_sided": false,
 		"overlap": false,
 		"depth_test": true,
-		"depth_write": true,
-		"gbuffer": true,
+		"scene_depth_write": true,
 		"depth_mode": 0,
 		"decal_tbn_mode": 0,
 		"normal_blend_mode": 0,
@@ -35,11 +34,14 @@
 		"frames_by_color": false,
 		"blend_mode": 0,
 		"blend_src": 5,
-		"blend_dest": 6
+		"blend_dest": 6,
+		"opacity_depth_write": true,
+		"velocity_write": true,
+		"material_mask_write": true
 	},
 	"parameters": {
 	},
-	"version": "2.18.0.1",
+	"version": "2.19.0.2",
 	"nodes": {
 		"Material": {
 			"label": "Material",

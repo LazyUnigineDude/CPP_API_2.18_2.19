@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>034608fe443e485447b006ac010cce2557077044</guid>
 	<type>texture</type>
-	<hash>5dfe632d</hash>
+	<hash>35825da2</hash>
 	<runtimes>
 		<runtime id="034608fe443e485447b006ac010cce2557077044" name="FrontLayer.png" link="0" type="6"/>
 		<runtime id="d6c4098b453eae27ed0317f57ef83ef7952ebed3" name="FrontLayer.texture" link="1" type="6"/>

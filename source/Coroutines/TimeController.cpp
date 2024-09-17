@@ -26,12 +26,12 @@ void TimeController::Init() {
 	TimeSlider = Unigine::WidgetSlider::create(1, 5, 3);
 	TimeSlider->setWidth(150);
 	TimeSlider->setPosition(100, 200);
-	TimeSlider->getEventChanged().connect([&]() {Time = 0; });
+	TimeSlider->getEventChanged().connect(EC, [&]() {Time = 0; });
 	GUI->addChild(TimeSlider, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 
 	StartAnim = Unigine::WidgetButton::create("Play");
 	StartAnim->setPosition(100, 250);
-	StartAnim->getEventClicked().connect([=]() { canAnimate = 1; });
+	StartAnim->getEventClicked().connect(EC, [=]() { canAnimate = 1; });
 	GUI->addChild(StartAnim, GUI->ALIGN_EXPAND | GUI->ALIGN_OVERLAP);
 
 	for (int i = 0; i < Objects.size(); i++) {

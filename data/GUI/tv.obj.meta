@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>58a6e94534c25fc80c52643fd1b39c302f903e0d</guid>
 	<type>fbx</type>
-	<hash>a80e3e42</hash>
+	<hash>3a38ad39</hash>
 	<runtimes>
 		<runtime id="58a6e94534c25fc80c52643fd1b39c302f903e0d" name="tv.obj" link="0"/>
 		<runtime id="d4dfd906428892a3e768a17459fe55a24c5ceb0c" name="tv.node" link="1" type="3">
 			<parameters>
-				<parameter type="string" name="id">112665f8</parameter>
+				<parameter type="string" name="id">cb30af9d</parameter>
 			</parameters>
 		</runtime>
 		<runtime id="f56876b3a1b56b0687e8a15d046cc1ab16f9aafb" name="default.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">bd97b4c3</parameter>
+				<parameter type="string" name="id">419d999f</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>

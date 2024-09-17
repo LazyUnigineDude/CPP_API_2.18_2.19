@@ -9,8 +9,8 @@ void Widgets::Init() {
 	Label->setFontColor(Unigine::Math::vec4_red);
 	Label->setFontOutline(2);
 	Label->setPosition(50, 50);
-	Label->getEventEnter().connect([]() {Unigine::Log::message("HI\n"); });
-	Label->getEventLeave().connect([]() {Unigine::Log::message("BI\n"); });
+	Label->getEventEnter().connect(EC, []() {Unigine::Log::message("HI\n"); });
+	Label->getEventLeave().connect(EC, []() {Unigine::Log::message("BI\n"); });
 	
 	// Button
 	Button = Unigine::WidgetButton::create("Click Me");
@@ -21,7 +21,7 @@ void Widgets::Init() {
 	Button->setButtonColor(Unigine::Math::vec4_black);
 	Button->setOrder(1);
 
-	Button->getEventClicked().connect(&Clicked);
+	Button->getEventClicked().connect(EC, &Clicked);
 	Button->getEventEnter().connect(this, &Widgets::Enter);
 	Button->getEventLeave().connect(this, &Widgets::Leave);
 
@@ -32,7 +32,7 @@ void Widgets::Init() {
 	Slider->setButtonHeight(100);
 	Slider->setPosition(100, 150);
 	Slider->setButtonColor(Unigine::Math::vec4_blue);
-	Slider->getEventChanged().connect([&]() {Unigine::Log::message("Value Slider: %d\n", Slider->getValue()); });
+	Slider->getEventChanged().connect(EC, [&]() {Unigine::Log::message("Value Slider: %d\n", Slider->getValue()); });
 
 	// Canvas
 	Canvas = Unigine::WidgetCanvas::create();
@@ -122,7 +122,7 @@ void Widgets::Init() {
 	Color->setWidth(200);
 	Color->setHeight(200);
 	Color->getEventClicked().connect(
-		
+		EC,
 		[&]() { 
 			if (Color->isCancelClicked()) Unigine::Log::message("Clicked Cancel\n");
 			else if (Color->isOkClicked()) Unigine::Log::message("Clicked OK\n");

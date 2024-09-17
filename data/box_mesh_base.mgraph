@@ -14,12 +14,14 @@
 		"two_sided": false,
 		"overlap": false,
 		"depth_test": true,
-		"depth_write": true,
-		"gbuffer": true,
+		"scene_depth_write": true,
 		"transparent_blur": false,
 		"refraction": false,
 		"blend_src": 5,
-		"blend_dest": 6
+		"blend_dest": 6,
+		"opacity_depth_write": true,
+		"velocity_write": true,
+		"material_mask_write": true
 	},
 	"parameters": {
 		"parameter": {
@@ -670,5 +672,5 @@
 			"output_node": "29ff10b4a09e84837e12e006093cb7add5983528"
 		}
 	},
-	"version": "2.18.0.1"
+	"version": "2.19.0.2"
 }

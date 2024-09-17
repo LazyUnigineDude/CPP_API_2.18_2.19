@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>9bb554f16c9c1aa157a2cbcb47ab074c60a6d439</guid>
 	<type>texture</type>
-	<hash>c3f3322</hash>
+	<hash>02883612</hash>
 	<runtimes>
 		<runtime id="9bb554f16c9c1aa157a2cbcb47ab074c60a6d439" name="BackLayer.png" link="0" type="6"/>
 		<runtime id="d76e4260367523a2ca802bbeedeb98481271b616" name="BackLayer.texture" link="1" type="6"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>3eb441c78a65417117ab871a5a3cd7a51847d260</guid>
 	<type>world</type>
-	<hash>8ea6dc82</hash>
+	<hash>e0edc5fc</hash>
 	<runtimes>
 		<runtime id="3eb441c78a65417117ab871a5a3cd7a51847d260" name="CPP_API_DayNIght.world" link="0"/>
 	</runtimes>

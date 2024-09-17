@@ -30,6 +30,7 @@ private:
 	bool canAnimate = 0;
 	Unigine::Vector<Unigine::Math::Vec3> Starts;
 	Unigine::Math::Vec3 End = Unigine::Math::Vec3_left * -4;
+	Unigine::EventConnections EC;
 };
 
 std::string FloatToString(float value, int percision = 8) {

@@ -25,6 +25,7 @@ private:
 
 	ChessMovement* Move;
 	Unigine::WidgetButtonPtr Up, Down, Left, Right, RLeft, RRight;
+	Unigine::EventConnections EC;
 };
 
 void Enter(const Unigine::WidgetPtr& Widget) {

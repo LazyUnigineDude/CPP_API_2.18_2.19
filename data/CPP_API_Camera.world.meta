@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>73ada763b68d51e3d64290d9267aca2cf9d4e57a</guid>
 	<type>world</type>
-	<hash>7fac0dab</hash>
+	<hash>45b56cc3</hash>
 	<runtimes>
 		<runtime id="73ada763b68d51e3d64290d9267aca2cf9d4e57a" name="CPP_API_Camera.world" link="0"/>
 	</runtimes>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>4295af99478e0a79cd419b1f60ff498635ad1558</guid>
 	<type>fbx</type>
-	<hash>b2816b13</hash>
+	<hash>59e36a1</hash>
 	<runtimes>
 		<runtime id="4295af99478e0a79cd419b1f60ff498635ad1558" name="Camera.fbx" link="0"/>
 		<runtime id="c15c85c4324b44304e407686d36a41bd1077d321" name="Camera.node" link="1" type="3">
 			<parameters>
-				<parameter type="string" name="id">5c04e277</parameter>
+				<parameter type="string" name="id">e103f6f1</parameter>
 			</parameters>
 		</runtime>
 		<runtime id="7786d0dd2d6c2fdae61b48c349a35de16edcd20c" name="cylinder.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">1ef3d773</parameter>
+				<parameter type="string" name="id">64e9c1bf</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>

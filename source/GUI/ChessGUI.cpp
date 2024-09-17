@@ -19,28 +19,28 @@ void ChessGUI::Init() {
 	RLeft->setPosition(150, 100);
 	RRight->setPosition(300, 100);
 
-	Up->getEventEnter().connect(Enter);
-	Up->getEventLeave().connect(Leave);
+	Up->getEventEnter().connect(EC, &Enter);
+	Up->getEventLeave().connect(EC, Leave);
 	Up->getEventClicked().connect(this, &ChessGUI::ClickUp);
 
-	Down->getEventEnter().connect(Enter);
-	Down->getEventLeave().connect(Leave);
+	Down->getEventEnter().connect(EC, Enter);
+	Down->getEventLeave().connect(EC, Leave);
 	Down->getEventClicked().connect(this, &ChessGUI::ClickDown);
 
-	Left->getEventEnter().connect(Enter);
-	Left->getEventLeave().connect(Leave);
+	Left->getEventEnter().connect(EC, Enter);
+	Left->getEventLeave().connect(EC, Leave);
 	Left->getEventClicked().connect(this, &ChessGUI::ClickLeft);
 
-	Right->getEventEnter().connect(Enter);
-	Right->getEventLeave().connect(Leave);
+	Right->getEventEnter().connect(EC, Enter);
+	Right->getEventLeave().connect(EC, Leave);
 	Right->getEventClicked().connect(this, &ChessGUI::ClickRight);
 
-	RLeft->getEventEnter().connect(Enter);
-	RLeft->getEventLeave().connect(Leave);
+	RLeft->getEventEnter().connect(EC, Enter);
+	RLeft->getEventLeave().connect(EC, Leave);
 	RLeft->getEventClicked().connect(this, &ChessGUI::ClickRLeft);
 
-	RRight->getEventEnter().connect(Enter);
-	RRight->getEventLeave().connect(Leave);
+	RRight->getEventEnter().connect(EC, Enter);
+	RRight->getEventLeave().connect(EC, Leave);
 	RRight->getEventClicked().connect(this, &ChessGUI::ClickRRight);
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<asset version="2.18.0.1">
+<asset version="2.19.0.2">
 	<guid>81f11e0122c5e9ebe5154c31a94bf3611619782a</guid>
 	<type>world</type>
-	<hash>a038a6f3</hash>
+	<hash>1b877966</hash>
 	<runtimes>
 		<runtime id="81f11e0122c5e9ebe5154c31a94bf3611619782a" name="CPP_Triggers.world" link="0"/>
 	</runtimes>
