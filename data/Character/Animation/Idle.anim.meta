@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.2">
+	<guid>02e2f2d38e56b9055fea2cbc69f2a61bee08a482</guid>
+	<type>animation</type>
+	<hash>bad1fd2f</hash>
+	<runtimes>
+		<runtime id="02e2f2d38e56b9055fea2cbc69f2a61bee08a482" name="Idle.anim" link="0" type="2"/>
+	</runtimes>
+</asset>

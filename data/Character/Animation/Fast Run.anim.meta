@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.2">
+	<guid>ea7c2179e6c1c445bc558dfa5f1e24c87afc67ba</guid>
+	<type>animation</type>
+	<hash>4078101</hash>
+	<runtimes>
+		<runtime id="ea7c2179e6c1c445bc558dfa5f1e24c87afc67ba" name="Fast Run.anim" link="0" type="2"/>
+	</runtimes>
+</asset>
