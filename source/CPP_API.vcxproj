@@ -74,6 +74,7 @@
     <ClCompile Include="AppEditorLogic.cpp" />
     <ClCompile Include="AppSystemLogic.cpp" />
     <ClCompile Include="AppWorldLogic.cpp" />
+    <ClCompile Include="Character\IKSolver.cpp" />
     <ClCompile Include="ComponentBasics\ComponentCheck.cpp" />
     <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
     <ClCompile Include="Coroutines\DayNightCycle.cpp" />
@@ -91,6 +92,7 @@
     <ClInclude Include="AppEditorLogic.h" />
     <ClInclude Include="AppSystemLogic.h" />
     <ClInclude Include="AppWorldLogic.h" />
+    <ClInclude Include="Character\IKSolver.h" />
     <ClInclude Include="ComponentBasics\ComponentCheck.h" />
     <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
     <ClInclude Include="Coroutines\DayNightCycle.h" />

@@ -49,6 +49,9 @@
     <ClCompile Include="GUI\ChessGUI.cpp">
       <Filter>GUI</Filter>
     </ClCompile>
+    <ClCompile Include="Character\IKSolver.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppEditorLogic.h">
@@ -102,6 +105,9 @@
     <ClInclude Include="GUI\ChessGUI.h">
       <Filter>GUI</Filter>
     </ClInclude>
+    <ClInclude Include="Character\IKSolver.h">
+      <Filter>Character</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_Main">
@@ -124,6 +130,9 @@
     </Filter>
     <Filter Include="GUI">
       <UniqueIdentifier>{37c051a9-88c5-468a-a5bc-5de38bd65614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{e05dd036-df10-4d6d-9a90-a36a5c15708e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
