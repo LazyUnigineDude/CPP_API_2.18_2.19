@@ -822,34 +822,40 @@
 			</lens_flare_billboards>
 			<transform>-0.43301237 0.43559623 -0.78914917 0.0 -0.75000048 -0.6597392 0.047366858 0.0 -0.49999967 0.61237252 0.6123724 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="PlayerSpectator" id="620479819" name="main_player">
-			<collision>1</collision>
-			<collision_mask>0x1</collision_mask>
-			<collision_radius>0.5</collision_radius>
-			<min_velocity>2</min_velocity>
-			<max_velocity>4</max_velocity>
-			<min_theta_angle>-89.9000015</min_theta_angle>
-			<max_theta_angle>89.9000015</max_theta_angle>
-			<acceleration>4</acceleration>
-			<damping>8</damping>
-			<turning>90</turning>
-			<zfar>100000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<is_main>1</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>0.85718870163 -0.51500248909 1.84327363968e-05 0.0 0.16769322753 0.279148578644 0.945491850376 0.0 -0.486935853958 -0.810461819172 0.325645446777 0.0 -1.27865579907 -3.67847731101 2.77362767766 1.0</transform>
-		</node>
 		<node type="ObjectMeshSkinned" id="2010277078" name="Character">
 			<mesh_name>guid://dce928c181ec31ae24a7df942531049d8c93876f</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
 			<fps_invisible>0</fps_invisible>
-			<anim_name>guid://c1f83a5355b4c9667bf0723c3671406e61ba0e02</anim_name>
+			<anim_name>guid://02e2f2d38e56b9055fea2cbc69f2a61bee08a482</anim_name>
 			<speed>30</speed>
 			<surface name="Ch36_Body" intersection="1" material="b03cee8d948b463e3b3e98f0da6d65567a3f5fdb"/>
-			<transform>0.999999880791 -8.08648934971e-29 3.46182091044e-21 0.0 -2.32669882322e-23 0.999999880791 -5.50628392578e-14 0.0 -3.23404942282e-21 4.98520355031e-14 0.999999940395 0.0 2.60576079099 -1.38244307565 2.27203361463 1.0</transform>
+			<properties>
+				<property parent="796efcb02bb9fb8f7b3ca50c6d2e0fdabc7eba98" guid="d3f6b8a1faaee7f584eb25f1bfb233792a8851c2"/>
+				<property parent="d1ccf83a5365270da319b3d385a51d59238e2f00" guid="edfc44bb899ff87835fc428ba2cff025a91fda44">
+					<parameter name="LLeg">
+						<value index="0">2</value>
+						<value index="1">9</value>
+						<value index="2">10</value>
+					</parameter>
+					<parameter name="RLeg">
+						<value index="0">1</value>
+						<value index="1">32</value>
+						<value index="2">34</value>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 -8.08648934971e-29 3.46182091044e-21 0.0 -2.32669882322e-23 0.999999880791 -5.50628392578e-14 0.0 -3.23404942282e-21 4.98520355031e-14 0.999999940395 0.0 0 0 0 1.0</transform>
+			<node type="PlayerDummy" id="1573955349" name="Cam">
+				<znear>0.300000012</znear>
+				<zfar>100000</zfar>
+				<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+				<is_oblique_frustum>0</is_oblique_frustum>
+				<is_main>1</is_main>
+				<is_listener>1</is_listener>
+				<controlled>1</controlled>
+				<transform>0.99705338443 0.0767120735898 -3.78489516461e-06 0.0 -0.029230789972 0.379968241449 0.924537654194 0.0 0.0709246332556 -0.921813299872 0.381090902155 0.0 0.512399169154 -1.60770972579 1.9927390479 1.0</transform>
+			</node>
 		</node>
 		<node type="ObjectMeshStatic" id="1696546271" immovable="1" name="box">
 			<mesh_name>guid://31a23d2d7fca789666a512400ee5ef176daf321b</mesh_name>
@@ -860,6 +866,19 @@
 			<mesh_name>guid://31a23d2d7fca789666a512400ee5ef176daf321b</mesh_name>
 			<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 			<transform>7.99999809265 0 0 0.0 0 2.56462192535 0 0.0 0 0 0.999999940395 0.0 1.99999988079 3.99999976158 0.25 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1940311408" immovable="1" name="box_2">
+			<mesh_name>guid://31a23d2d7fca789666a512400ee5ef176daf321b</mesh_name>
+			<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>2.86102022073e-06 7.99998998642 0 0.0 -2.56461954117 9.17179704629e-07 0 0.0 0 0 0.999999940395 0.0 -1.98668618406 1.80401578128 0.00566291019748 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="565314063" name="NodeDummy">
+			<properties>
+				<property parent="dc812752b758972aef424a8f84837913571199c0" guid="9dd4c3ac8bd2bc29e112d49c1421bb92b1e06639">
+					<parameter name="ConstNode">2010277078</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 		</node>
 	</editor>
 	<console>
