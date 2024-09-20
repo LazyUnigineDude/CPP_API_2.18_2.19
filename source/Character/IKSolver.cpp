@@ -14,7 +14,7 @@ void IKSolver::Init() {
 
 	IKRight = Animation->addIKChain();
 	for (int i = 0; i < RLeg.size(); i++)
-		Animation->addIKChainBone(LLeg[i], IKRight);
+		Animation->addIKChainBone(RLeg[i], IKRight);
 
 	Animation->addVisualizeIKChain(IKLeft);
 	Animation->addVisualizeIKChain(IKRight);
@@ -25,8 +25,8 @@ void IKSolver::Update() {
 	Animation->setIKChainPoleWorldPosition(node->getChild(0)->getWorldPosition(), IKLeft);
 	Animation->setIKChainPoleWorldPosition(node->getChild(1)->getWorldPosition(), IKRight);
 
-	AlignFoot(Animation->getBoneWorldTransform(LLeg[0]), IKLeft);
-	AlignFoot(Animation->getBoneWorldTransform(RLeg[0]), IKRight);
+	AlignFoot(Animation->getBoneWorldTransform(LLeg[1]), IKLeft);
+	AlignFoot(Animation->getBoneWorldTransform(RLeg[1]), IKRight);
 
 }
 
@@ -37,7 +37,7 @@ void IKSolver::Shutdown() {
 
 void IKSolver::AlignFoot(const Unigine::Math::Mat4& BoneTransform, const int& BoneNum) {
 
-	Unigine::ObjectPtr Obj = Unigine::World::getIntersection(BoneTransform.getTranslate(), BoneTransform.getTranslate() + Unigine::Math::Vec3_down, GroundMask, Ptr);
+	Unigine::ObjectPtr Obj = Unigine::World::getIntersection(BoneTransform.getTranslate(), BoneTransform.getTranslate() + Unigine::Math::Vec3_down * 5, GroundMask, Ptr);
 	if (!Obj) return;
 
 	Unigine::Math::Vec3 Pos{ Ptr->getPoint() };
