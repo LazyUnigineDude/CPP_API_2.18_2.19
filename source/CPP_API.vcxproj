@@ -3,6 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B293D37E-7919-3600-7DAA-ECDA5E05645A}</ProjectGuid>
     <ProjectName>CPP_API</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -43,6 +44,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>DEBUG;UNIGINE_DOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX64</TargetMachine>
@@ -60,6 +62,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>NDEBUG;UNIGINE_DOUBLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX64</TargetMachine>
@@ -79,6 +82,7 @@
     <ClCompile Include="ComponentBasics\GettingComponentsLogic.cpp" />
     <ClCompile Include="Coroutines\DayNightCycle.cpp" />
     <ClCompile Include="Coroutines\TimeController.cpp" />
+    <ClCompile Include="Events\SimulateEvent.cpp" />
     <ClCompile Include="GUI\ChessGUI.cpp" />
     <ClCompile Include="GUI\Widgets.cpp" />
     <ClCompile Include="Intersections\Camera.cpp" />
@@ -97,6 +101,9 @@
     <ClInclude Include="ComponentBasics\GettingComponentsLogic.h" />
     <ClInclude Include="Coroutines\DayNightCycle.h" />
     <ClInclude Include="Coroutines\TimeController.h" />
+    <ClInclude Include="Events\EventHandler.h" />
+    <ClInclude Include="Events\Events.h" />
+    <ClInclude Include="Events\SimulateEvent.h" />
     <ClInclude Include="GUI\ChessGUI.h" />
     <ClInclude Include="GUI\Widgets.h" />
     <ClInclude Include="Intersections\Camera.h" />

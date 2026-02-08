@@ -32,7 +32,7 @@ void IKSolver::Update() {
 
 void IKSolver::Shutdown() {
 
-	if (Ptr) Ptr.deleteLater();
+	if (Ptr) Ptr.~Ptr();
 }
 
 void IKSolver::AlignFoot(const Unigine::Math::Mat4& BoneTransform, const int& BoneNum) {

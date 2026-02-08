@@ -41,7 +41,7 @@
       <Filter>Intersections</Filter>
     </ClCompile>
     <ClCompile Include="Triggers\TriggerExample.cpp">
-      <Filter>Event Trigger</Filter>
+      <Filter>Trigger</Filter>
     </ClCompile>
     <ClCompile Include="GUI\Widgets.cpp">
       <Filter>GUI</Filter>
@@ -51,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="Character\IKSolver.cpp">
       <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\SimulateEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -100,13 +103,22 @@
       <Filter>GUI</Filter>
     </ClInclude>
     <ClInclude Include="Triggers\TriggerExample.h">
-      <Filter>Event Trigger</Filter>
+      <Filter>Trigger</Filter>
     </ClInclude>
     <ClInclude Include="GUI\ChessGUI.h">
       <Filter>GUI</Filter>
     </ClInclude>
     <ClInclude Include="Character\IKSolver.h">
       <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Events.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\SimulateEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\EventHandler.h">
+      <Filter>Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -125,14 +137,17 @@
     <Filter Include="Intersections">
       <UniqueIdentifier>{b1e4bf76-85bb-47af-873d-e913247e5c50}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Event Trigger">
-      <UniqueIdentifier>{2204c228-4c8b-4e09-be8d-107e7cc29d22}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GUI">
       <UniqueIdentifier>{37c051a9-88c5-468a-a5bc-5de38bd65614}</UniqueIdentifier>
     </Filter>
     <Filter Include="Character">
       <UniqueIdentifier>{e05dd036-df10-4d6d-9a90-a36a5c15708e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trigger">
+      <UniqueIdentifier>{2204c228-4c8b-4e09-be8d-107e7cc29d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{483216ea-631f-424b-856f-247298832081}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

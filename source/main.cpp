@@ -1,5 +1,6 @@
 #ifdef UNIGINE_PS5
-	#include <UniginePS5Init.h>
+	#include <UnigineInit.h>
+#include <UniginePS5Init.h>
 #endif
 #include <UnigineEngine.h>
 

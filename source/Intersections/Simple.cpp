@@ -43,8 +43,8 @@ void SimpleDetect::Update() {
 
 void SimpleDetect::Shutdown() {
 
-	if (Ptr) Ptr.deleteLater();
-	if (NPtr) NPtr.deleteLater();
+	if (Ptr) Ptr.~Ptr();
+	if (NPtr) NPtr.~Ptr();
 
 	Unigine::GuiPtr GUI = Unigine::Gui::getCurrent();
 	if (GUI->isChild(Label))  GUI->removeChild(Label); 
